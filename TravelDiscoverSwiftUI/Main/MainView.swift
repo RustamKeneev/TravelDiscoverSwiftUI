@@ -12,6 +12,9 @@ struct MainView: View {
         NavigationView{
             ScrollView{
                 DiscoverCategoriesView()
+                PopularDestinationView()
+                PopularRestaurantsView()
+                TrendingCreatorsView()
             }//: SCROLL VIEW
             .navigationTitle("Discover")
         }//: NAVIGATION VIEW
