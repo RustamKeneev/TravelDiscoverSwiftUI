@@ -13,6 +13,8 @@
 		FF666DA32BE3E3F700EE15DA /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FF666DA22BE3E3F700EE15DA /* Preview Assets.xcassets */; };
 		FF666DA52BE3E3F700EE15DA /* Persistence.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF666DA42BE3E3F700EE15DA /* Persistence.swift */; };
 		FF666DA82BE3E3F700EE15DA /* TravelDiscoverSwiftUI.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = FF666DA62BE3E3F700EE15DA /* TravelDiscoverSwiftUI.xcdatamodeld */; };
+		FF666DAF2BE4960400EE15DA /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF666DAE2BE4960400EE15DA /* MainView.swift */; };
+		FF666DB22BE49E7800EE15DA /* DiscoverCategoriesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF666DB12BE49E7800EE15DA /* DiscoverCategoriesView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -23,6 +25,8 @@
 		FF666DA22BE3E3F700EE15DA /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		FF666DA42BE3E3F700EE15DA /* Persistence.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Persistence.swift; sourceTree = "<group>"; };
 		FF666DA72BE3E3F700EE15DA /* TravelDiscoverSwiftUI.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = TravelDiscoverSwiftUI.xcdatamodel; sourceTree = "<group>"; };
+		FF666DAE2BE4960400EE15DA /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
+		FF666DB12BE49E7800EE15DA /* DiscoverCategoriesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiscoverCategoriesView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -55,6 +59,7 @@
 		FF666D9A2BE3E3F500EE15DA /* TravelDiscoverSwiftUI */ = {
 			isa = PBXGroup;
 			children = (
+				FF666DB02BE49E5800EE15DA /* Main */,
 				FF666D9B2BE3E3F500EE15DA /* TravelDiscoverSwiftUIApp.swift */,
 				FF666D9D2BE3E3F500EE15DA /* ContentView.swift */,
 				FF666D9F2BE3E3F700EE15DA /* Assets.xcassets */,
@@ -71,6 +76,15 @@
 				FF666DA22BE3E3F700EE15DA /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		FF666DB02BE49E5800EE15DA /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				FF666DAE2BE4960400EE15DA /* MainView.swift */,
+				FF666DB12BE49E7800EE15DA /* DiscoverCategoriesView.swift */,
+			);
+			path = Main;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -146,7 +160,9 @@
 				FF666DA52BE3E3F700EE15DA /* Persistence.swift in Sources */,
 				FF666D9E2BE3E3F500EE15DA /* ContentView.swift in Sources */,
 				FF666DA82BE3E3F700EE15DA /* TravelDiscoverSwiftUI.xcdatamodeld in Sources */,
+				FF666DAF2BE4960400EE15DA /* MainView.swift in Sources */,
 				FF666D9C2BE3E3F500EE15DA /* TravelDiscoverSwiftUIApp.swift in Sources */,
+				FF666DB22BE49E7800EE15DA /* DiscoverCategoriesView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
