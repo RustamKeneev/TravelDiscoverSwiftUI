@@ -19,6 +19,7 @@
 		FF666DB62BE5201600EE15DA /* PopularRestaurantsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF666DB52BE5201600EE15DA /* PopularRestaurantsView.swift */; };
 		FF666DB82BE52D0D00EE15DA /* TrendingCreatorsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF666DB72BE52D0D00EE15DA /* TrendingCreatorsView.swift */; };
 		FF666DBB2BE532F700EE15DA /* Category.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF666DBA2BE532F700EE15DA /* Category.swift */; };
+		FF666DBD2BE5493400EE15DA /* Destination.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF666DBC2BE5493400EE15DA /* Destination.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -35,6 +36,7 @@
 		FF666DB52BE5201600EE15DA /* PopularRestaurantsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PopularRestaurantsView.swift; sourceTree = "<group>"; };
 		FF666DB72BE52D0D00EE15DA /* TrendingCreatorsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrendingCreatorsView.swift; sourceTree = "<group>"; };
 		FF666DBA2BE532F700EE15DA /* Category.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Category.swift; sourceTree = "<group>"; };
+		FF666DBC2BE5493400EE15DA /* Destination.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Destination.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -67,6 +69,7 @@
 		FF666D9A2BE3E3F500EE15DA /* TravelDiscoverSwiftUI */ = {
 			isa = PBXGroup;
 			children = (
+				FF666DB92BE532E100EE15DA /* Model */,
 				FF666DB02BE49E5800EE15DA /* Main */,
 				FF666D9B2BE3E3F500EE15DA /* TravelDiscoverSwiftUIApp.swift */,
 				FF666D9D2BE3E3F500EE15DA /* ContentView.swift */,
@@ -89,7 +92,6 @@
 		FF666DB02BE49E5800EE15DA /* Main */ = {
 			isa = PBXGroup;
 			children = (
-				FF666DB92BE532E100EE15DA /* Model */,
 				FF666DAE2BE4960400EE15DA /* MainView.swift */,
 				FF666DB12BE49E7800EE15DA /* DiscoverCategoriesView.swift */,
 				FF666DB32BE4C0F800EE15DA /* PopularDestinationView.swift */,
@@ -103,6 +105,7 @@
 			isa = PBXGroup;
 			children = (
 				FF666DBA2BE532F700EE15DA /* Category.swift */,
+				FF666DBC2BE5493400EE15DA /* Destination.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -187,6 +190,7 @@
 				FF666DB22BE49E7800EE15DA /* DiscoverCategoriesView.swift in Sources */,
 				FF666DB42BE4C0F800EE15DA /* PopularDestinationView.swift in Sources */,
 				FF666DB82BE52D0D00EE15DA /* TrendingCreatorsView.swift in Sources */,
+				FF666DBD2BE5493400EE15DA /* Destination.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

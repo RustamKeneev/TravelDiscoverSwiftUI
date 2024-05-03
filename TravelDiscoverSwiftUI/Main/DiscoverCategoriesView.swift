@@ -24,7 +24,6 @@ struct DiscoverCategoriesView: View {
             HStack(spacing: 16){
                 ForEach(categories, id: \.self){ category in
                     VStack(spacing: 4) {
-//                        Spacer()
                         Image(systemName: category.imageName)
                             .font(.system(size: 28))
                             .foregroundColor(.white)

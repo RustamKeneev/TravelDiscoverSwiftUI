@@ -8,6 +8,14 @@
 import SwiftUI
 
 struct PopularDestinationView: View {
+    //MARK: - PROPERTIES
+    let destinations: [Destination] = [
+        .init(name: "Paris", country: "France", imageName: "eiffel_tower"),
+        .init(name: "Tokyo", country: "Japan", imageName: "japan"),
+        .init(name: "New York", country: "US", imageName: "new_york"),
+    ]
+
+    //MARK: - BODY
     var body: some View {
         VStack {
             HStack{
@@ -21,10 +29,25 @@ struct PopularDestinationView: View {
             .padding(.top)
             ScrollView(.horizontal, showsIndicators: false){
                 HStack(spacing: 8){
-                    ForEach(0..<5, id: \.self){ num in
-                        Spacer()
-                            .frame(width: 124, height: 128)
-                            .background(Color.gray)
+                    ForEach(destinations, id: \.self){ destination in
+                        VStack(alignment: .leading, spacing: 0){
+                            Image(destination.imageName)
+                                .resizable()
+                                .scaledToFill()
+                                .frame(width: 125, height: 125)
+                                .cornerRadius(4)
+                                .padding(.horizontal, 6)
+                                .padding(.vertical, 6)
+                            Text(destination.name)
+                                .font(.system(size: 14, weight: .semibold))
+                                .padding(.horizontal, 12)
+                            Text(destination.country)
+                                .font(.system(size: 14, weight: .semibold))
+                                .padding(.horizontal, 12)
+                                .padding(.bottom, 8)
+                                .foregroundColor(Color.gray)
+                        }//: VSTACK
+                            .background(Color(.init(white:0.9, alpha: 1)))
                             .cornerRadius(6)
                             .shadow(color: .gray, radius: 4, x: 0.0, y: 2)
                             .padding(.bottom)
@@ -36,6 +59,7 @@ struct PopularDestinationView: View {
     }
 }
 
+//MARK: - PREVIEW
 #Preview {
     PopularDestinationView()
 }
