@@ -26,14 +26,14 @@ struct DiscoverCategoriesView: View {
                     VStack(spacing: 4) {
                         Image(systemName: category.imageName)
                             .font(.system(size: 28))
-                            .foregroundColor(.white)
+                            .foregroundColor(Color.orange)
                             .frame(width: 68, height: 68)
-                            .background(Color.gray)
+                            .background(Color.white)
                             .cornerRadius(.infinity)
-                            .shadow(color: .gray, radius: 4, x: 0.0, y: 2)
                         Text(category.name)
                             .font(.system(size: 12, weight: .semibold))
                             .multilineTextAlignment(.center)
+                            .foregroundColor(Color.white)
                     }//: VSTACK
                 }//: LOOP
             }//: HSTACK

@@ -58,10 +58,9 @@ struct PopularRestaurantsView: View {
                             Spacer()
                         }//: HSTACK
                             .frame(width: 240)
-                            .background(Color(.init(white:0.9, alpha: 1)))
+                            .background(Color.white)
                             .cornerRadius(6)
-                            .shadow(color: .gray, radius: 4, x: 0.0, y: 2)
-                            .padding(.bottom)
+                            .shadow(color: .init(.sRGB, white: 0.8, opacity: 1), radius: 4, x:0.0, y:2)                            .padding(.bottom)
                     }//: LOOP
                 }//: HSTACK
                 .padding(.horizontal)
