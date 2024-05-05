@@ -47,9 +47,7 @@ struct PopularDestinationView: View {
                                 .padding(.bottom, 8)
                                 .foregroundColor(Color.gray)
                         }//: VSTACK
-                            .background(Color.white)
-                            .cornerRadius(6)
-                            .shadow(color: .init(.sRGB, white: 0.8, opacity: 1), radius: 4, x:0.0, y:2)
+                        .asTitle()
                             .padding(.bottom)
                     }//: LOOP
                 }//: HSTACK
