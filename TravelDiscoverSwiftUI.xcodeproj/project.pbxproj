@@ -12,6 +12,8 @@
 		FF0E07AD2BE7932300071DC6 /* TitleModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF0E07AC2BE7932300071DC6 /* TitleModifier.swift */; };
 		FF0E07B02BE7955700071DC6 /* DiscoveryExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF0E07AF2BE7955700071DC6 /* DiscoveryExtensions.swift */; };
 		FF0E07B22BE7BD7600071DC6 /* CategoryDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF0E07B12BE7BD7600071DC6 /* CategoryDetailView.swift */; };
+		FF0E07B52BE7CF9E00071DC6 /* SomeObservableObjectForUserInterface.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF0E07B42BE7CF9E00071DC6 /* SomeObservableObjectForUserInterface.swift */; };
+		FF0E07B82BE7ECFC00071DC6 /* ActivityIndicatorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF0E07B72BE7ECFC00071DC6 /* ActivityIndicatorView.swift */; };
 		FF666D9C2BE3E3F500EE15DA /* TravelDiscoverSwiftUIApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF666D9B2BE3E3F500EE15DA /* TravelDiscoverSwiftUIApp.swift */; };
 		FF666D9E2BE3E3F500EE15DA /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF666D9D2BE3E3F500EE15DA /* ContentView.swift */; };
 		FF666DA02BE3E3F700EE15DA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FF666D9F2BE3E3F700EE15DA /* Assets.xcassets */; };
@@ -33,6 +35,8 @@
 		FF0E07AC2BE7932300071DC6 /* TitleModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TitleModifier.swift; sourceTree = "<group>"; };
 		FF0E07AF2BE7955700071DC6 /* DiscoveryExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiscoveryExtensions.swift; sourceTree = "<group>"; };
 		FF0E07B12BE7BD7600071DC6 /* CategoryDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryDetailView.swift; sourceTree = "<group>"; };
+		FF0E07B42BE7CF9E00071DC6 /* SomeObservableObjectForUserInterface.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SomeObservableObjectForUserInterface.swift; sourceTree = "<group>"; };
+		FF0E07B72BE7ECFC00071DC6 /* ActivityIndicatorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActivityIndicatorView.swift; sourceTree = "<group>"; };
 		FF666D982BE3E3F500EE15DA /* TravelDiscoverSwiftUI.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TravelDiscoverSwiftUI.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FF666D9B2BE3E3F500EE15DA /* TravelDiscoverSwiftUIApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TravelDiscoverSwiftUIApp.swift; sourceTree = "<group>"; };
 		FF666D9D2BE3E3F500EE15DA /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -109,6 +113,22 @@
 			path = Extensions;
 			sourceTree = "<group>";
 		};
+		FF0E07B32BE7CF3500071DC6 /* Observable */ = {
+			isa = PBXGroup;
+			children = (
+				FF0E07B42BE7CF9E00071DC6 /* SomeObservableObjectForUserInterface.swift */,
+			);
+			path = Observable;
+			sourceTree = "<group>";
+		};
+		FF0E07B62BE7ECC600071DC6 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				FF0E07B72BE7ECFC00071DC6 /* ActivityIndicatorView.swift */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
 		FF666D8F2BE3E3F500EE15DA = {
 			isa = PBXGroup;
 			children = (
@@ -128,6 +148,8 @@
 		FF666D9A2BE3E3F500EE15DA /* TravelDiscoverSwiftUI */ = {
 			isa = PBXGroup;
 			children = (
+				FF0E07B62BE7ECC600071DC6 /* Utils */,
+				FF0E07B32BE7CF3500071DC6 /* Observable */,
 				FF0E07AE2BE7952900071DC6 /* Extensions */,
 				FF0E07AB2BE7930C00071DC6 /* Modifiers */,
 				FF666DB92BE532E100EE15DA /* Models */,
@@ -249,6 +271,7 @@
 				FF666DBB2BE532F700EE15DA /* Category.swift in Sources */,
 				FF0E07B02BE7955700071DC6 /* DiscoveryExtensions.swift in Sources */,
 				FF666DB62BE5201600EE15DA /* PopularRestaurantsView.swift in Sources */,
+				FF0E07B52BE7CF9E00071DC6 /* SomeObservableObjectForUserInterface.swift in Sources */,
 				FF666D9E2BE3E3F500EE15DA /* ContentView.swift in Sources */,
 				FF666DA82BE3E3F700EE15DA /* TravelDiscoverSwiftUI.xcdatamodeld in Sources */,
 				FF666DAF2BE4960400EE15DA /* MainView.swift in Sources */,
@@ -257,6 +280,7 @@
 				FF0E07A42BE660FC00071DC6 /* Restaurant.swift in Sources */,
 				FF666DB42BE4C0F800EE15DA /* PopularDestinationView.swift in Sources */,
 				FF666DB82BE52D0D00EE15DA /* TrendingCreatorsView.swift in Sources */,
+				FF0E07B82BE7ECFC00071DC6 /* ActivityIndicatorView.swift in Sources */,
 				FF666DBD2BE5493400EE15DA /* Destination.swift in Sources */,
 				FF0E07B22BE7BD7600071DC6 /* CategoryDetailView.swift in Sources */,
 			);

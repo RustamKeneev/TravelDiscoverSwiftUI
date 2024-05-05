@@ -8,25 +8,44 @@
 import SwiftUI
 
 struct CategoryDetailView: View {
+    //MARK: - PROPERTIES
+    @ObservedObject var vm  = SomeObservableObjectForUserInterface()
+    
+    //MARK: - BODY
     var body: some View {
-        ScrollView{
-            ForEach(0..<5, id: \.self){num in
-                VStack(alignment: .leading, spacing: 0){
-                    Image("art1")
-                        .resizable()
-                        .scaledToFill()
-                    Text("test")
-                        .font(.system(size: 12, weight: .semibold))
-                        .padding()
+        ZStack{
+            if vm.isLoading {
+                VStack {
+                    ActivityIndicatorView()
+                    Text("Loading..")
+                        .foregroundColor(.white)
+                        .font(.system(size: 16, weight: .semibold))
                 }//: VSTACK
-                .asTitle()
                 .padding()
-            }//: LOOP
-        }//: SCROLLVIEW
+                .background(Color.gray)
+                .cornerRadius(8)
+            }else{
+                ScrollView{
+                    ForEach(vm.places, id: \.self){num in
+                        VStack(alignment: .leading, spacing: 0){
+                            Image("art1")
+                                .resizable()
+                                .scaledToFill()
+                            Text("test")
+                                .font(.system(size: 12, weight: .semibold))
+                                .padding()
+                        }//: VSTACK
+                        .asTitle()
+                        .padding()
+                    }//: LOOP
+                }//: SCROLLVIEW
+            }
+        }//: ZSTACK
         .navigationBarTitle("Category", displayMode: .inline)
     }
 }
 
+//MARK: - PREVIEW
 #Preview {
     CategoryDetailView()
 }
