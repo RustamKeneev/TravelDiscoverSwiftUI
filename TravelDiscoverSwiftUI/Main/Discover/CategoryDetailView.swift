@@ -9,7 +9,7 @@ import SwiftUI
 
 struct CategoryDetailView: View {
     //MARK: - PROPERTIES
-    @ObservedObject var vm  = SomeObservableObjectForUserInterface()
+    @ObservedObject var vm  = CategoryDetailViewModel()
     
     //MARK: - BODY
     var body: some View {
