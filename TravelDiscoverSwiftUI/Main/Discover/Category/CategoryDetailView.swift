@@ -6,7 +6,8 @@
 //
 
 import SwiftUI
-
+import Kingfisher
+import SDWebImage
 struct CategoryDetailView: View {
     //MARK: - PROPERTIES
     @ObservedObject var vm  = CategoryDetailViewModel()
@@ -30,7 +31,8 @@ struct CategoryDetailView: View {
                     ScrollView{
                         ForEach(vm.places, id: \.self){place in
                             VStack(alignment: .leading, spacing: 0){
-                                Image("art1")
+//                                Image("art1")
+                                KFImage(URL(string: place.thumbnail))
                                     .resizable()
                                     .scaledToFill()
                                 Text(place.name)
