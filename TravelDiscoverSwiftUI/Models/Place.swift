@@ -8,7 +8,11 @@
 import Foundation
 import SwiftUI
 
-struct Place: Decodable, Hashable{
+struct Place: Identifiable, Decodable, Hashable {
+    let id: Int
     let name: String
-    let thumbNail: String
+    let country: String
+    let description: String
+    let thumbnail: String
+    let photos: [String]
 }

@@ -25,20 +25,23 @@ struct CategoryDetailView: View {
                 .background(Color.gray)
                 .cornerRadius(8)
             }else{
-                ScrollView{
-                    ForEach(vm.places, id: \.self){num in
-                        VStack(alignment: .leading, spacing: 0){
-                            Image("art1")
-                                .resizable()
-                                .scaledToFill()
-                            Text("test")
-                                .font(.system(size: 12, weight: .semibold))
-                                .padding()
-                        }//: VSTACK
-                        .asTitle()
-                        .padding()
-                    }//: LOOP
-                }//: SCROLLVIEW
+                ZStack{
+                    Text(vm.errorMessage)
+                    ScrollView{
+                        ForEach(vm.places, id: \.self){place in
+                            VStack(alignment: .leading, spacing: 0){
+                                Image("art1")
+                                    .resizable()
+                                    .scaledToFill()
+                                Text(place.name)
+                                    .font(.system(size: 12, weight: .semibold))
+                                    .padding()
+                            }//: VSTACK
+                            .asTitle()
+                            .padding()
+                        }//: LOOP
+                    }//: SCROLLVIEW
+                }//: ZSTACK
             }
         }//: ZSTACK
         .navigationBarTitle("Category", displayMode: .inline)
