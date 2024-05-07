@@ -121,12 +121,12 @@
 			path = Extensions;
 			sourceTree = "<group>";
 		};
-		FF0E07B32BE7CF3500071DC6 /* Observable */ = {
+		FF0E07B32BE7CF3500071DC6 /* ViewModel */ = {
 			isa = PBXGroup;
 			children = (
 				FF0E07B42BE7CF9E00071DC6 /* CategoryDetailViewModel.swift */,
 			);
-			path = Observable;
+			path = ViewModel;
 			sourceTree = "<group>";
 		};
 		FF0E07B62BE7ECC600071DC6 /* Utils */ = {
@@ -140,7 +140,7 @@
 		FF0E07C32BE9665F00071DC6 /* Category */ = {
 			isa = PBXGroup;
 			children = (
-				FF0E07B32BE7CF3500071DC6 /* Observable */,
+				FF0E07B32BE7CF3500071DC6 /* ViewModel */,
 				FF0E07B12BE7BD7600071DC6 /* CategoryDetailView.swift */,
 			);
 			path = Category;

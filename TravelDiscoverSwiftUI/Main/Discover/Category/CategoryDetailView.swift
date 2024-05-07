@@ -10,11 +10,18 @@ import Kingfisher
 import SDWebImage
 struct CategoryDetailView: View {
     //MARK: - PROPERTIES
-    @ObservedObject var vm  = CategoryDetailViewModel()
+    private let name: String
+    @ObservedObject private var vm: CategoryDetailViewModel
+    
+    init(name: String) {
+        self.name = name
+        self.vm = .init(name: name)
+    }
     
     //MARK: - BODY
     var body: some View {
         ZStack{
+            
             if vm.isLoading {
                 VStack {
                     ActivityIndicatorView()
@@ -27,7 +34,14 @@ struct CategoryDetailView: View {
                 .cornerRadius(8)
             }else{
                 ZStack{
-                    Text(vm.errorMessage)
+                    if !vm.errorMessage.isEmpty{
+                        VStack(spacing: 12){
+                            Image(systemName: "xmark.octagon.fill")
+                                .font(.system(size: 64, weight: .semibold))
+                                .foregroundColor(Color.red)
+                            Text(vm.errorMessage)
+                        }//: VSTACK
+                    }
                     ScrollView{
                         ForEach(vm.places, id: \.self){place in
                             VStack(alignment: .leading, spacing: 0){
@@ -46,11 +60,11 @@ struct CategoryDetailView: View {
                 }//: ZSTACK
             }
         }//: ZSTACK
-        .navigationBarTitle("Category", displayMode: .inline)
+        .navigationBarTitle(name, displayMode: .inline)
     }
 }
 
 //MARK: - PREVIEW
 #Preview {
-    CategoryDetailView()
+    CategoryDetailView(name: "Food")
 }
