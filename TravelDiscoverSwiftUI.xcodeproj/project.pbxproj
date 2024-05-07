@@ -18,6 +18,7 @@
 		FF0E07BD2BE957B800071DC6 /* Kingfisher in Frameworks */ = {isa = PBXBuildFile; productRef = FF0E07BC2BE957B800071DC6 /* Kingfisher */; };
 		FF0E07C02BE963F800071DC6 /* SDWebImage in Frameworks */ = {isa = PBXBuildFile; productRef = FF0E07BF2BE963F800071DC6 /* SDWebImage */; };
 		FF0E07C22BE963F800071DC6 /* SDWebImageMapKit in Frameworks */ = {isa = PBXBuildFile; productRef = FF0E07C12BE963F800071DC6 /* SDWebImageMapKit */; };
+		FF0E07C52BEA925C00071DC6 /* NavigationLazyView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF0E07C42BEA925C00071DC6 /* NavigationLazyView.swift */; };
 		FF666D9C2BE3E3F500EE15DA /* TravelDiscoverSwiftUIApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF666D9B2BE3E3F500EE15DA /* TravelDiscoverSwiftUIApp.swift */; };
 		FF666D9E2BE3E3F500EE15DA /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF666D9D2BE3E3F500EE15DA /* ContentView.swift */; };
 		FF666DA02BE3E3F700EE15DA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FF666D9F2BE3E3F700EE15DA /* Assets.xcassets */; };
@@ -42,6 +43,7 @@
 		FF0E07B42BE7CF9E00071DC6 /* CategoryDetailViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryDetailViewModel.swift; sourceTree = "<group>"; };
 		FF0E07B72BE7ECFC00071DC6 /* ActivityIndicatorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActivityIndicatorView.swift; sourceTree = "<group>"; };
 		FF0E07B92BE8B7A200071DC6 /* Place.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Place.swift; sourceTree = "<group>"; };
+		FF0E07C42BEA925C00071DC6 /* NavigationLazyView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationLazyView.swift; sourceTree = "<group>"; };
 		FF666D982BE3E3F500EE15DA /* TravelDiscoverSwiftUI.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TravelDiscoverSwiftUI.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FF666D9B2BE3E3F500EE15DA /* TravelDiscoverSwiftUIApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TravelDiscoverSwiftUIApp.swift; sourceTree = "<group>"; };
 		FF666D9D2BE3E3F500EE15DA /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -133,6 +135,7 @@
 			isa = PBXGroup;
 			children = (
 				FF0E07B72BE7ECFC00071DC6 /* ActivityIndicatorView.swift */,
+				FF0E07C42BEA925C00071DC6 /* NavigationLazyView.swift */,
 			);
 			path = Utils;
 			sourceTree = "<group>";
@@ -309,6 +312,7 @@
 				FF666DB82BE52D0D00EE15DA /* TrendingCreatorsView.swift in Sources */,
 				FF0E07B82BE7ECFC00071DC6 /* ActivityIndicatorView.swift in Sources */,
 				FF666DBD2BE5493400EE15DA /* Destination.swift in Sources */,
+				FF0E07C52BEA925C00071DC6 /* NavigationLazyView.swift in Sources */,
 				FF0E07B22BE7BD7600071DC6 /* CategoryDetailView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

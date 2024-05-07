@@ -24,7 +24,7 @@ struct DiscoverCategoriesView: View {
             HStack(spacing: 16){
                 ForEach(categories, id: \.self){ category in
                     NavigationLink {
-                        CategoryDetailView(name: category.name)
+                        NavigationLazyView(CategoryDetailView(name: category.name))
                     } label: {
                         VStack(spacing: 4) {
                             Image(systemName: category.imageName)
@@ -39,7 +39,6 @@ struct DiscoverCategoriesView: View {
                                 .foregroundColor(Color.white)
                         }//: VSTACK
                     }//: NAVIGATION LINK
-
                 }//: LOOP
             }//: HSTACK
             .padding(.horizontal)
