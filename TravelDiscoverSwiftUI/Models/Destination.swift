@@ -12,4 +12,6 @@ struct Destination: Hashable {
     let name: String
     let country: String
     let imageName: String
+    
+    
 }
