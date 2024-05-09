@@ -34,7 +34,7 @@ struct PopularDestinationTileView: View {
 
 struct PopularDestinationTileView_Previews: PreviewProvider {
     static var previews: some View {
-        let sampleDestination = Destination(name: "Sample Destination", country: "Sample Country", imageName: "sample_image")
+        let sampleDestination = Destination(name: "Sample Destination", country: "Sample Country", imageName: "sample_image", latitude: 35.679693, longitude: 139.771913)
         PopularDestinationTileView(destination: sampleDestination)
     }
 }

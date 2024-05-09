@@ -13,6 +13,8 @@ class CategoryDetailViewModel: ObservableObject{
     @Published var isLoading = true
     @Published var places = [Place]()
     @Published var errorMessage = ""
+    @Published var isLoadingImages = [Bool]()
+    
     init(name: String){
         let urlString = "https://travel.letsbuildthatapp.com/travel_discovery/category?name=\(name.lowercased())"
             .addingPercentEncoding(withAllowedCharacters: .urlQueryAllowed) ?? ""
@@ -31,14 +33,17 @@ class CategoryDetailViewModel: ObservableObject{
                 guard let data = data else {return}
                 do{
                     self.places =  try JSONDecoder().decode([Place].self, from: data)
+                    self.isLoadingImages = Array(repeating: true, count: self.places.count) 
                     print(data)
                 }catch{
                     print("Failed to decode JSON: \(error)")
                     self.errorMessage = error.localizedDescription
                 }
                 self.isLoading = false
-//                self.places = []
+                //                self.places = []
             }//: DISPATCH
         }.resume()
     }
 }
+
+

@@ -10,9 +10,9 @@ import SwiftUI
 struct PopularDestinationView: View {
     //MARK: - PROPERTIES
     let destinations: [Destination] = [
-        .init(name: "Paris", country: "France", imageName: "eiffel_tower"),
-        .init(name: "Tokyo", country: "Japan", imageName: "japan"),
-        .init(name: "New York", country: "US", imageName: "new_york"),
+        .init(name: "Paris", country: "France", imageName: "eiffel_tower", latitude: 48.855014, longitude: 2.341231),
+        .init(name: "Tokyo", country: "Japan", imageName: "japan", latitude: 35.67988, longitude: 139.7695),
+        .init(name: "New York", country: "US", imageName: "new_york", latitude: 40.71592, longitude: -74.0055),
     ]
 
     //MARK: - BODY

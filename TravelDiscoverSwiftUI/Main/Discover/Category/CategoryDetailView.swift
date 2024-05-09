@@ -7,10 +7,13 @@
 
 import SwiftUI
 import Kingfisher
-import SDWebImage
+import SDWebImageSwiftUI
+
+
 struct CategoryDetailView: View {
     //MARK: - PROPERTIES
     private let name: String
+    
     @ObservedObject private var vm: CategoryDetailViewModel
     
     init(name: String) {
@@ -45,7 +48,11 @@ struct CategoryDetailView: View {
                     ScrollView{
                         ForEach(vm.places, id: \.self){place in
                             VStack(alignment: .leading, spacing: 0){
-//                                Image("art1")
+                                if vm.isLoading {
+                                    Indicator()
+                                        .frame(width: 50, height: 50)
+                                        .foregroundColor(.blue)
+                                }
                                 KFImage(URL(string: place.thumbnail))
                                     .resizable()
                                     .scaledToFill()

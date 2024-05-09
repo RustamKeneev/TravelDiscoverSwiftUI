@@ -16,11 +16,11 @@
 		FF0E07B82BE7ECFC00071DC6 /* ActivityIndicatorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF0E07B72BE7ECFC00071DC6 /* ActivityIndicatorView.swift */; };
 		FF0E07BA2BE8B7A200071DC6 /* Place.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF0E07B92BE8B7A200071DC6 /* Place.swift */; };
 		FF0E07BD2BE957B800071DC6 /* Kingfisher in Frameworks */ = {isa = PBXBuildFile; productRef = FF0E07BC2BE957B800071DC6 /* Kingfisher */; };
-		FF0E07C02BE963F800071DC6 /* SDWebImage in Frameworks */ = {isa = PBXBuildFile; productRef = FF0E07BF2BE963F800071DC6 /* SDWebImage */; };
-		FF0E07C22BE963F800071DC6 /* SDWebImageMapKit in Frameworks */ = {isa = PBXBuildFile; productRef = FF0E07C12BE963F800071DC6 /* SDWebImageMapKit */; };
 		FF0E07C52BEA925C00071DC6 /* NavigationLazyView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF0E07C42BEA925C00071DC6 /* NavigationLazyView.swift */; };
 		FF0E07C72BEAA02200071DC6 /* PopularDestinationTileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF0E07C62BEAA02200071DC6 /* PopularDestinationTileView.swift */; };
 		FF0E07C92BEB7B3900071DC6 /* PopularDestinationDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF0E07C82BEB7B3900071DC6 /* PopularDestinationDetailView.swift */; };
+		FF0E07CC2BEBC58C00071DC6 /* SDWebImageSwiftUI in Frameworks */ = {isa = PBXBuildFile; productRef = FF0E07CB2BEBC58C00071DC6 /* SDWebImageSwiftUI */; };
+		FF0E07CE2BEBE08300071DC6 /* Indicator.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF0E07CD2BEBE08300071DC6 /* Indicator.swift */; };
 		FF666D9C2BE3E3F500EE15DA /* TravelDiscoverSwiftUIApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF666D9B2BE3E3F500EE15DA /* TravelDiscoverSwiftUIApp.swift */; };
 		FF666D9E2BE3E3F500EE15DA /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF666D9D2BE3E3F500EE15DA /* ContentView.swift */; };
 		FF666DA02BE3E3F700EE15DA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FF666D9F2BE3E3F700EE15DA /* Assets.xcassets */; };
@@ -34,6 +34,7 @@
 		FF666DB82BE52D0D00EE15DA /* TrendingCreatorsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF666DB72BE52D0D00EE15DA /* TrendingCreatorsView.swift */; };
 		FF666DBB2BE532F700EE15DA /* Category.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF666DBA2BE532F700EE15DA /* Category.swift */; };
 		FF666DBD2BE5493400EE15DA /* Destination.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF666DBC2BE5493400EE15DA /* Destination.swift */; };
+		FFD4CD0C2BECC4FC0063DF63 /* Attraction.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFD4CD0B2BECC4FC0063DF63 /* Attraction.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -48,6 +49,8 @@
 		FF0E07C42BEA925C00071DC6 /* NavigationLazyView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationLazyView.swift; sourceTree = "<group>"; };
 		FF0E07C62BEAA02200071DC6 /* PopularDestinationTileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PopularDestinationTileView.swift; sourceTree = "<group>"; };
 		FF0E07C82BEB7B3900071DC6 /* PopularDestinationDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PopularDestinationDetailView.swift; sourceTree = "<group>"; };
+		FF0E07CD2BEBE08300071DC6 /* Indicator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Indicator.swift; sourceTree = "<group>"; };
+		FF0E07CF2BEBF97200071DC6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		FF666D982BE3E3F500EE15DA /* TravelDiscoverSwiftUI.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TravelDiscoverSwiftUI.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FF666D9B2BE3E3F500EE15DA /* TravelDiscoverSwiftUIApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TravelDiscoverSwiftUIApp.swift; sourceTree = "<group>"; };
 		FF666D9D2BE3E3F500EE15DA /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -62,6 +65,7 @@
 		FF666DB72BE52D0D00EE15DA /* TrendingCreatorsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrendingCreatorsView.swift; sourceTree = "<group>"; };
 		FF666DBA2BE532F700EE15DA /* Category.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Category.swift; sourceTree = "<group>"; };
 		FF666DBC2BE5493400EE15DA /* Destination.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Destination.swift; sourceTree = "<group>"; };
+		FFD4CD0B2BECC4FC0063DF63 /* Attraction.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Attraction.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -69,8 +73,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FF0E07C02BE963F800071DC6 /* SDWebImage in Frameworks */,
-				FF0E07C22BE963F800071DC6 /* SDWebImageMapKit in Frameworks */,
+				FF0E07CC2BEBC58C00071DC6 /* SDWebImageSwiftUI in Frameworks */,
 				FF0E07BD2BE957B800071DC6 /* Kingfisher in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -142,6 +145,7 @@
 			children = (
 				FF0E07B72BE7ECFC00071DC6 /* ActivityIndicatorView.swift */,
 				FF0E07C42BEA925C00071DC6 /* NavigationLazyView.swift */,
+				FF0E07CD2BEBE08300071DC6 /* Indicator.swift */,
 			);
 			path = Utils;
 			sourceTree = "<group>";
@@ -174,6 +178,7 @@
 		FF666D9A2BE3E3F500EE15DA /* TravelDiscoverSwiftUI */ = {
 			isa = PBXGroup;
 			children = (
+				FF0E07CF2BEBF97200071DC6 /* Info.plist */,
 				FF0E07B62BE7ECC600071DC6 /* Utils */,
 				FF0E07AE2BE7952900071DC6 /* Extensions */,
 				FF0E07AB2BE7930C00071DC6 /* Modifiers */,
@@ -217,6 +222,7 @@
 				FF0E07A32BE660FC00071DC6 /* Restaurant.swift */,
 				FF0E07A52BE66DBC00071DC6 /* User.swift */,
 				FF0E07B92BE8B7A200071DC6 /* Place.swift */,
+				FFD4CD0B2BECC4FC0063DF63 /* Attraction.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -239,8 +245,7 @@
 			name = TravelDiscoverSwiftUI;
 			packageProductDependencies = (
 				FF0E07BC2BE957B800071DC6 /* Kingfisher */,
-				FF0E07BF2BE963F800071DC6 /* SDWebImage */,
-				FF0E07C12BE963F800071DC6 /* SDWebImageMapKit */,
+				FF0E07CB2BEBC58C00071DC6 /* SDWebImageSwiftUI */,
 			);
 			productName = TravelDiscoverSwiftUI;
 			productReference = FF666D982BE3E3F500EE15DA /* TravelDiscoverSwiftUI.app */;
@@ -273,6 +278,7 @@
 			packageReferences = (
 				FF0E07BB2BE957B800071DC6 /* XCRemoteSwiftPackageReference "Kingfisher" */,
 				FF0E07BE2BE9639600071DC6 /* XCRemoteSwiftPackageReference "SDWebImage" */,
+				FF0E07CA2BEBC58C00071DC6 /* XCRemoteSwiftPackageReference "SDWebImageSwiftUI" */,
 			);
 			productRefGroup = FF666D992BE3E3F500EE15DA /* Products */;
 			projectDirPath = "";
@@ -304,6 +310,7 @@
 				FF0E07AD2BE7932300071DC6 /* TitleModifier.swift in Sources */,
 				FF666DA52BE3E3F700EE15DA /* Persistence.swift in Sources */,
 				FF666DBB2BE532F700EE15DA /* Category.swift in Sources */,
+				FFD4CD0C2BECC4FC0063DF63 /* Attraction.swift in Sources */,
 				FF0E07B02BE7955700071DC6 /* DiscoveryExtensions.swift in Sources */,
 				FF666DB62BE5201600EE15DA /* PopularRestaurantsView.swift in Sources */,
 				FF0E07B52BE7CF9E00071DC6 /* CategoryDetailViewModel.swift in Sources */,
@@ -314,6 +321,7 @@
 				FF666D9C2BE3E3F500EE15DA /* TravelDiscoverSwiftUIApp.swift in Sources */,
 				FF0E07C92BEB7B3900071DC6 /* PopularDestinationDetailView.swift in Sources */,
 				FF0E07C72BEAA02200071DC6 /* PopularDestinationTileView.swift in Sources */,
+				FF0E07CE2BEBE08300071DC6 /* Indicator.swift in Sources */,
 				FF666DB22BE49E7800EE15DA /* DiscoverCategoriesView.swift in Sources */,
 				FF0E07A42BE660FC00071DC6 /* Restaurant.swift in Sources */,
 				FF666DB42BE4C0F800EE15DA /* PopularDestinationView.swift in Sources */,
@@ -458,6 +466,7 @@
 				DEVELOPMENT_TEAM = VYT9YM6M52;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = TravelDiscoverSwiftUI/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -487,6 +496,7 @@
 				DEVELOPMENT_TEAM = VYT9YM6M52;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = TravelDiscoverSwiftUI/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -545,6 +555,14 @@
 				minimumVersion = 5.19.1;
 			};
 		};
+		FF0E07CA2BEBC58C00071DC6 /* XCRemoteSwiftPackageReference "SDWebImageSwiftUI" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SDWebImage/SDWebImageSwiftUI";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 3.0.4;
+			};
+		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
@@ -553,15 +571,10 @@
 			package = FF0E07BB2BE957B800071DC6 /* XCRemoteSwiftPackageReference "Kingfisher" */;
 			productName = Kingfisher;
 		};
-		FF0E07BF2BE963F800071DC6 /* SDWebImage */ = {
+		FF0E07CB2BEBC58C00071DC6 /* SDWebImageSwiftUI */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = FF0E07BE2BE9639600071DC6 /* XCRemoteSwiftPackageReference "SDWebImage" */;
-			productName = SDWebImage;
-		};
-		FF0E07C12BE963F800071DC6 /* SDWebImageMapKit */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = FF0E07BE2BE9639600071DC6 /* XCRemoteSwiftPackageReference "SDWebImage" */;
-			productName = SDWebImageMapKit;
+			package = FF0E07CA2BEBC58C00071DC6 /* XCRemoteSwiftPackageReference "SDWebImageSwiftUI" */;
+			productName = SDWebImageSwiftUI;
 		};
 /* End XCSwiftPackageProductDependency section */
 
