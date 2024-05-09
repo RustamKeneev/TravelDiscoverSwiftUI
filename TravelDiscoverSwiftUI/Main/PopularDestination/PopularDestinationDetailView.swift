@@ -14,8 +14,9 @@ struct PopularDestinationDetailView: View {
     let destination: Destination
     
     let attractions: [Attraction] = [
-        .init(name: "Eifel tower", latitude: 35.679693, longitude: 139.771913),
-        .init(name: " tower", latitude: 35.99693, longitude: 140.991913)
+        .init(name: "Eiffel Tower", imageName: "eiffel_tower", latitude: 48.858605, longitude: 2.2946),
+        .init(name: "Champs-Elysees", imageName: "new_york", latitude: 48.866867, longitude: 2.311780),
+        .init(name: "Louvre Museum", imageName: "art2", latitude: 48.860288, longitude: 2.337789)
     ]
     
     @State var region: MKCoordinateRegion
@@ -49,7 +50,7 @@ struct PopularDestinationDetailView: View {
                 
                 Text("Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.")
                     .padding(.top, 4)
-            
+                    .font(.system(size: 14))
                 HStack{ Spacer() }
             }
             .padding(.horizontal)
@@ -68,7 +69,9 @@ struct PopularDestinationDetailView: View {
             }//: HSTACK
             .padding(.horizontal)
             Map(coordinateRegion: $region, annotationItems: isShowingAttractions ?  attractions : []){ attraction  in
-                MapMarker(coordinate: .init(latitude: attraction.latitude, longitude: attraction.longitude), tint: .red)
+                MapAnnotation(coordinate: .init(latitude: attraction.latitude, longitude: attraction.longitude)){
+                    CustomMapAnnotation(attraction: attraction)
+                }
             }
             .frame(height: 300)
             
@@ -78,8 +81,7 @@ struct PopularDestinationDetailView: View {
 
 //MARK: - PREVIEW
 #Preview {
-//    PopularDestinationDetailView()
     NavigationView {
-        PopularDestinationDetailView(destination: .init(name: "Paris", country: "France", imageName: "eiffel_tower", latitude: 35.679693, longitude: 139.771913))
+        PopularDestinationDetailView(destination: .init(name: "Paris", country: "France", imageName: "eiffel_tower", latitude: 48.859565, longitude: 2.353235))
     }
 }
