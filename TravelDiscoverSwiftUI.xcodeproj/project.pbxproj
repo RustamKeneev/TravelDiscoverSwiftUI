@@ -37,6 +37,7 @@
 		FFD4CD0C2BECC4FC0063DF63 /* Attraction.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFD4CD0B2BECC4FC0063DF63 /* Attraction.swift */; };
 		FFD4CD0E2BED1E540063DF63 /* CustomMapAnnotation.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFD4CD0D2BED1E540063DF63 /* CustomMapAnnotation.swift */; };
 		FFD4CD102BED3B380063DF63 /* DestinationHeaderContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFD4CD0F2BED3B380063DF63 /* DestinationHeaderContainer.swift */; };
+		FFD4CD132BEDD40C0063DF63 /* CustomPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFD4CD122BEDD40C0063DF63 /* CustomPageViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -70,6 +71,7 @@
 		FFD4CD0B2BECC4FC0063DF63 /* Attraction.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Attraction.swift; sourceTree = "<group>"; };
 		FFD4CD0D2BED1E540063DF63 /* CustomMapAnnotation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomMapAnnotation.swift; sourceTree = "<group>"; };
 		FFD4CD0F2BED3B380063DF63 /* DestinationHeaderContainer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DestinationHeaderContainer.swift; sourceTree = "<group>"; };
+		FFD4CD122BEDD40C0063DF63 /* CustomPageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomPageViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -152,6 +154,7 @@
 				FF0E07B72BE7ECFC00071DC6 /* ActivityIndicatorView.swift */,
 				FF0E07C42BEA925C00071DC6 /* NavigationLazyView.swift */,
 				FF0E07CD2BEBE08300071DC6 /* Indicator.swift */,
+				FFD4CD122BEDD40C0063DF63 /* CustomPageViewController.swift */,
 			);
 			path = Utils;
 			sourceTree = "<group>";
@@ -346,6 +349,7 @@
 				FF666DBD2BE5493400EE15DA /* Destination.swift in Sources */,
 				FF0E07C52BEA925C00071DC6 /* NavigationLazyView.swift in Sources */,
 				FF0E07B22BE7BD7600071DC6 /* CategoryDetailView.swift in Sources */,
+				FFD4CD132BEDD40C0063DF63 /* CustomPageViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

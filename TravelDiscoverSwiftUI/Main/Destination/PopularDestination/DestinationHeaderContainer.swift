@@ -11,9 +11,11 @@ import UIKit
 
 struct DestinationHeaderContainer: UIViewControllerRepresentable{
     func makeUIViewController(context: Context) -> UIViewController {
-        let redVC = UIViewController()
-        redVC.view.backgroundColor = .red
-        return redVC
+//        let redVC = UIHostingController(rootView: Text("test"))
+//        redVC.view.backgroundColor = .red
+//        return redVC
+        let pvc = CustomPageViewController()
+        return pvc
     }
     
     typealias UIViewControllerType = UIViewController
