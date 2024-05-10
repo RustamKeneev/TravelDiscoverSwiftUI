@@ -38,6 +38,8 @@
 		FFD4CD0E2BED1E540063DF63 /* CustomMapAnnotation.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFD4CD0D2BED1E540063DF63 /* CustomMapAnnotation.swift */; };
 		FFD4CD102BED3B380063DF63 /* DestinationHeaderContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFD4CD0F2BED3B380063DF63 /* DestinationHeaderContainer.swift */; };
 		FFD4CD132BEDD40C0063DF63 /* CustomPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFD4CD122BEDD40C0063DF63 /* CustomPageViewController.swift */; };
+		FFD4CD152BEE9A5B0063DF63 /* DestinationDetailsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFD4CD142BEE9A5B0063DF63 /* DestinationDetailsViewModel.swift */; };
+		FFD4CD172BEE9B620063DF63 /* DestinationDetails.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFD4CD162BEE9B620063DF63 /* DestinationDetails.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -72,6 +74,8 @@
 		FFD4CD0D2BED1E540063DF63 /* CustomMapAnnotation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomMapAnnotation.swift; sourceTree = "<group>"; };
 		FFD4CD0F2BED3B380063DF63 /* DestinationHeaderContainer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DestinationHeaderContainer.swift; sourceTree = "<group>"; };
 		FFD4CD122BEDD40C0063DF63 /* CustomPageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomPageViewController.swift; sourceTree = "<group>"; };
+		FFD4CD142BEE9A5B0063DF63 /* DestinationDetailsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DestinationDetailsViewModel.swift; sourceTree = "<group>"; };
+		FFD4CD162BEE9B620063DF63 /* DestinationDetails.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DestinationDetails.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -104,6 +108,7 @@
 				FF0E07C82BEB7B3900071DC6 /* PopularDestinationDetailView.swift */,
 				FFD4CD0D2BED1E540063DF63 /* CustomMapAnnotation.swift */,
 				FFD4CD0F2BED3B380063DF63 /* DestinationHeaderContainer.swift */,
+				FFD4CD142BEE9A5B0063DF63 /* DestinationDetailsViewModel.swift */,
 			);
 			path = PopularDestination;
 			sourceTree = "<group>";
@@ -232,6 +237,7 @@
 				FF0E07A52BE66DBC00071DC6 /* User.swift */,
 				FF0E07B92BE8B7A200071DC6 /* Place.swift */,
 				FFD4CD0B2BECC4FC0063DF63 /* Attraction.swift */,
+				FFD4CD162BEE9B620063DF63 /* DestinationDetails.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -325,6 +331,7 @@
 			files = (
 				FF0E07A62BE66DBC00071DC6 /* User.swift in Sources */,
 				FF0E07AD2BE7932300071DC6 /* TitleModifier.swift in Sources */,
+				FFD4CD172BEE9B620063DF63 /* DestinationDetails.swift in Sources */,
 				FFD4CD102BED3B380063DF63 /* DestinationHeaderContainer.swift in Sources */,
 				FF666DA52BE3E3F700EE15DA /* Persistence.swift in Sources */,
 				FFD4CD0E2BED1E540063DF63 /* CustomMapAnnotation.swift in Sources */,
@@ -339,6 +346,7 @@
 				FF0E07BA2BE8B7A200071DC6 /* Place.swift in Sources */,
 				FF666D9C2BE3E3F500EE15DA /* TravelDiscoverSwiftUIApp.swift in Sources */,
 				FF0E07C92BEB7B3900071DC6 /* PopularDestinationDetailView.swift in Sources */,
+				FFD4CD152BEE9A5B0063DF63 /* DestinationDetailsViewModel.swift in Sources */,
 				FF0E07C72BEAA02200071DC6 /* PopularDestinationTileView.swift in Sources */,
 				FF0E07CE2BEBE08300071DC6 /* Indicator.swift in Sources */,
 				FF666DB22BE49E7800EE15DA /* DiscoverCategoriesView.swift in Sources */,

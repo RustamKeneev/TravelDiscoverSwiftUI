@@ -31,7 +31,7 @@ struct PopularDestinationView: View {
                 HStack(spacing: 8.0){
                     ForEach(destinations, id: \.self){ destination in
                         NavigationLink {
-                            PopularDestinationDetailView(destination: destination)
+                            NavigationLazyView(PopularDestinationDetailView(destination: destination))
                         } label: {
                             PopularDestinationTileView(destination: destination)
                             .asTitle()

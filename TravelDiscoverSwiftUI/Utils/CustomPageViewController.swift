@@ -41,19 +41,18 @@ class CustomPageViewController: UIPageViewController, UIPageViewControllerDataSo
         super.init(transitionStyle: .scroll, navigationOrientation: .horizontal, options: nil)
         
         allControllers = imageNames.map({ imageName in
-            let hostingController = UIHostingController(rootView: 
-//                                                            Image(imageName)
-                                                        KFImage(URL(string: imageName))
+            let hostingController = UIHostingController(rootView: KFImage(URL(string: imageName))
                 .resizable()
                 .scaledToFill()
             )
             hostingController.view.clipsToBounds = true
             return hostingController
         })
-        
-        setViewControllers([allControllers.first!], direction: .forward, animated: true, completion: nil)
-        self.dataSource = self
-        self.delegate = self
+        if let first = allControllers.first{
+            setViewControllers([first], direction: .forward, animated: true, completion: nil)
+            self.dataSource = self
+            self.delegate = self
+        }
     }
     
     required init?(coder: NSCoder) {

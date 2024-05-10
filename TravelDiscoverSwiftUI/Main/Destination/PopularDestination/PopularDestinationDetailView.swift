@@ -10,6 +10,7 @@ import MapKit
 
 struct PopularDestinationDetailView: View {
     //MARK: - PROPERIES
+    @ObservedObject var vm: DestinationDetailsViewModel
 
     let destination: Destination
     
@@ -22,25 +23,22 @@ struct PopularDestinationDetailView: View {
     @State var region: MKCoordinateRegion
     @State var isShowingAttractions = false
     
+
     init(destination: Destination){
         self.destination = destination
         self._region = State(initialValue: MKCoordinateRegion(center: .init(latitude: destination.latitude, longitude: destination.longitude), span: .init(latitudeDelta: 0.1, longitudeDelta: 0.1)))
+        self.vm = .init(name: destination.name)
+
     }
     
-    
-    let imageUrlStrings = [
-        "https://letsbuildthatapp-videos.s3-us-west-2.amazonaws.com/2240d474-2237-4cd3-9919-562cd1bb439e",
-        "https://letsbuildthatapp-videos.s3-us-west-2.amazonaws.com/b1642068-5624-41cf-83f1-3f6dff8c1702",
-        "https://letsbuildthatapp-videos.s3-us-west-2.amazonaws.com/6982cc9d-3104-4a54-98d7-45ee5d117531"
-    ]
     
     //MARK: - BODY
     var body: some View {
         ScrollView {
-            
-            DestinationHeaderContainer(imageNames: imageUrlStrings)
-                .frame(height: 250)
-            
+            if let photos = vm.destinationDetails?.photos {
+                DestinationHeaderContainer(imageNames: photos)
+                    .frame(height: 250)
+            }
             VStack(alignment: .leading) {
                 Text(destination.name)
                     .font(.system(size: 18, weight: .bold))
@@ -53,7 +51,7 @@ struct PopularDestinationDetailView: View {
                     }
                 }.padding(.top, 2)
                 
-                Text("Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.")
+                Text(vm.destinationDetails?.description ?? "")
                     .padding(.top, 4)
                     .font(.system(size: 14))
                 HStack{ Spacer() }
