@@ -8,6 +8,7 @@
 import Foundation
 import SwiftUI
 import UIKit
+import Kingfisher
 
 class CustomPageViewController: UIPageViewController, UIPageViewControllerDataSource, UIPageViewControllerDelegate{
     
@@ -40,7 +41,9 @@ class CustomPageViewController: UIPageViewController, UIPageViewControllerDataSo
         super.init(transitionStyle: .scroll, navigationOrientation: .horizontal, options: nil)
         
         allControllers = imageNames.map({ imageName in
-            let hostingController = UIHostingController(rootView: Image(imageName)
+            let hostingController = UIHostingController(rootView: 
+//                                                            Image(imageName)
+                                                        KFImage(URL(string: imageName))
                 .resizable()
                 .scaledToFill()
             )
