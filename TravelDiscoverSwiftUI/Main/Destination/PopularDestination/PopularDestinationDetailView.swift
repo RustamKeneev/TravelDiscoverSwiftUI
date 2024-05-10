@@ -32,14 +32,8 @@ struct PopularDestinationDetailView: View {
     var body: some View {
         ScrollView {
             
-            DestinationHeaderContainer()
-//                .frame(height: 40)
-//            
-//            Image(destination.imageName)
-//                .resizable()
-//                .scaledToFill()
+            DestinationHeaderContainer(imageNames: ["eiffel_tower", "art1", "art2"])
                 .frame(height: 250)
-//                .clipped()
             
             VStack(alignment: .leading) {
                 Text(destination.name)

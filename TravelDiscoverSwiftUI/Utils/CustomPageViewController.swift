@@ -31,18 +31,24 @@ class CustomPageViewController: UIPageViewController, UIPageViewControllerDataSo
         return allControllers[index + 1]
     }
     
-    let firstVC = UIHostingController(rootView: Text("First"))
-    let secondVC = UIHostingController(rootView: Text("Second"))
-    let thirddVC = UIHostingController(rootView: Text("Third"))
+    var allControllers: [UIViewController] = []
     
-    lazy var allControllers: [UIViewController] = [firstVC, secondVC, thirddVC]
-    
-    init(){
+    init(imageNames: [String]){
         UIPageControl.appearance().pageIndicatorTintColor = UIColor.systemGray5
         UIPageControl.appearance().currentPageIndicatorTintColor = .red
         
         super.init(transitionStyle: .scroll, navigationOrientation: .horizontal, options: nil)
-        setViewControllers([firstVC], direction: .forward, animated: true, completion: nil)
+        
+        allControllers = imageNames.map({ imageName in
+            let hostingController = UIHostingController(rootView: Image(imageName)
+                .resizable()
+                .scaledToFill()
+            )
+            hostingController.view.clipsToBounds = true
+            return hostingController
+        })
+        
+        setViewControllers([allControllers.first!], direction: .forward, animated: true, completion: nil)
         self.dataSource = self
         self.delegate = self
     }

@@ -10,11 +10,10 @@ import SwiftUI
 import UIKit
 
 struct DestinationHeaderContainer: UIViewControllerRepresentable{
+    let imageNames: [String]
+
     func makeUIViewController(context: Context) -> UIViewController {
-//        let redVC = UIHostingController(rootView: Text("test"))
-//        redVC.view.backgroundColor = .red
-//        return redVC
-        let pvc = CustomPageViewController()
+        let pvc = CustomPageViewController(imageNames: imageNames)
         return pvc
     }
     
