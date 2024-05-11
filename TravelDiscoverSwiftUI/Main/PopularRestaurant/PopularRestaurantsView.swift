@@ -29,40 +29,17 @@ struct PopularRestaurantsView: View {
             ScrollView(.horizontal, showsIndicators: false){
                 HStack(spacing: 8){
                     ForEach(restaurants, id: \.self){ restaurant in
-                        HStack(spacing: 8){
-                            Image(restaurant.imageName)
-                                .resizable()
-                                .scaledToFill()
-                                .frame(width: 64, height: 60)
-                                .clipped()
-                                .padding(.leading, 6)
-                                .padding(.vertical, 6)
-                            VStack(alignment: .leading, spacing: 6){
-                                HStack{
-                                    Text(restaurant.name)
-                                    Spacer()
-                                    Button(action: {
-                                        
-                                    }, label: {
-                                        Image(systemName: "ellipsis")
-                                            .foregroundColor(.gray)
-                                    })
-                                }//: HSTACK
-                                HStack{
-                                    Image(systemName: "star.fill")
-                                    Text("4.7 • Sushi • $$")
-                                }//: HSTACK
-                                Text("title 2")
-                            }//: VSTACK
-                            .font(.system(size: 12, weight: .semibold))
-                            Spacer()
-                        }//: HSTACK
-                            .frame(width: 240)
-                            .asTitle()
-                            .padding(.bottom)
+                        NavigationLink(
+                            destination: RestaurantDetailsView(restaurant: restaurant),
+                            label: {
+                                RestaurantTile(restaurant: restaurant)
+                                    .foregroundColor(Color(.label))
+                            })//: NAVIGATION LINK
                     }//: LOOP
                 }//: HSTACK
                 .padding(.horizontal)
+                .padding(.bottom)
+
             }//: SCROLLVIEW
         }//: VSTACK
     }
