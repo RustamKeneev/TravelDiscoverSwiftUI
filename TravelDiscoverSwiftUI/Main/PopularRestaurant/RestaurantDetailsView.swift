@@ -6,10 +6,18 @@
 //
 
 import SwiftUI
+import Kingfisher
 
 struct RestaurantDetailsView: View {
     //MARK: - PROPERTIES
+    @ObservedObject var vm = RestaurantDetailsViewModel()
+
     let restaurant: Restaurant
+    
+    let sampleDishPhotos = [
+        "https://letsbuildthatapp-videos.s3.us-west-2.amazonaws.com/0d1d2e79-2f10-4cfd-82da-a1c2ab3638d2",
+        "https://letsbuildthatapp-videos.s3.us-west-2.amazonaws.com/3a352f87-3dc1-4fa7-affe-fb12fa8691fe"
+    ]
 
     var body: some View {
         ScrollView{
@@ -49,7 +57,7 @@ struct RestaurantDetailsView: View {
                     }//: LOOP
                     .foregroundColor(.orange)
                 }//: HSTACK
-                Text("Usually when you want to write a very long description, you want to make sure that it spans at least a few lines. When I'm testing I like to see at least 5 lines of text so that things are auto sized correctly.  One more line of text just to be safe.")
+                Text(vm.details?.description ?? "")
                     .padding(.top, 8)
                     .font(.system(size: 14, weight: .regular))
             }//: VSTACK
@@ -61,22 +69,9 @@ struct RestaurantDetailsView: View {
             }.padding(.horizontal)
             ScrollView(.horizontal, showsIndicators: false) {
                 HStack(spacing: 16) {
-                    ForEach(0..<5, id: \.self) { num in
+                    ForEach(vm.details?.popularDishes ?? [], id: \.self) { dish in
                         VStack(alignment: .leading) {
-                            Image("tapas")
-                                .resizable()
-                                .scaledToFill()
-                                .frame(height: 80)
-                                .cornerRadius(5)
-                                .overlay(RoundedRectangle(cornerRadius: 5).stroke(Color.gray))
-                                .shadow(radius: 2)
-                                .padding(.vertical, 2)
-                            
-                            Text("Japanese Tapas")
-                                .font(.system(size: 14, weight: .bold))
-                            Text("88 photos")
-                                .foregroundColor(.gray)
-                                .font(.system(size: 12, weight: .regular))
+                            DishCell(dish: dish)
                         }
                     }
                 }//:HSTACK
