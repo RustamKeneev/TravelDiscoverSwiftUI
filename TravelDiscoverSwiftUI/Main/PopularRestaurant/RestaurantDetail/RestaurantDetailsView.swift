@@ -39,11 +39,15 @@ struct RestaurantDetailsView: View {
                         }//: HSTACK
                     }//: VSTACK
                     Spacer()
-                    Text("See more photos")
-                        .foregroundColor(.white)
-                        .font(.system(size: 14, weight: .regular))
-                        .frame(width: 80)
-                        .multilineTextAlignment(.trailing)
+                    NavigationLink {
+                        RestaurantPhotosView()
+                    } label: {
+                        Text("See more photos")
+                            .foregroundColor(.white)
+                            .font(.system(size: 14, weight: .regular))
+                            .frame(width: 80)
+                            .multilineTextAlignment(.trailing)
+                    }//: NAVIGATION LINK
                 }//: HSTACK
                 .padding()
             }//: ZSTACK

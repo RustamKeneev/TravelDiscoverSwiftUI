@@ -51,6 +51,7 @@
 		FFD4CD2A2BF1CF460063DF63 /* LocationDescriptionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFD4CD292BF1CF460063DF63 /* LocationDescriptionView.swift */; };
 		FFD4CD2C2BF1CFE40063DF63 /* PopularDishesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFD4CD2B2BF1CFE40063DF63 /* PopularDishesView.swift */; };
 		FFD4CD2E2BF1D0950063DF63 /* CustomerReviewsVIew.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFD4CD2D2BF1D0950063DF63 /* CustomerReviewsVIew.swift */; };
+		FFD4CD302BF290540063DF63 /* RestaurantPhotosView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFD4CD2F2BF290540063DF63 /* RestaurantPhotosView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -98,6 +99,7 @@
 		FFD4CD292BF1CF460063DF63 /* LocationDescriptionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationDescriptionView.swift; sourceTree = "<group>"; };
 		FFD4CD2B2BF1CFE40063DF63 /* PopularDishesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PopularDishesView.swift; sourceTree = "<group>"; };
 		FFD4CD2D2BF1D0950063DF63 /* CustomerReviewsVIew.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomerReviewsVIew.swift; sourceTree = "<group>"; };
+		FFD4CD2F2BF290540063DF63 /* RestaurantPhotosView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RestaurantPhotosView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -287,6 +289,7 @@
 				FFD4CD292BF1CF460063DF63 /* LocationDescriptionView.swift */,
 				FFD4CD2B2BF1CFE40063DF63 /* PopularDishesView.swift */,
 				FFD4CD2D2BF1D0950063DF63 /* CustomerReviewsVIew.swift */,
+				FFD4CD2F2BF290540063DF63 /* RestaurantPhotosView.swift */,
 			);
 			path = RestaurantDetail;
 			sourceTree = "<group>";
@@ -374,6 +377,7 @@
 				FFD4CD212BEFC1310063DF63 /* Dish.swift in Sources */,
 				FF0E07AD2BE7932300071DC6 /* TitleModifier.swift in Sources */,
 				FFD4CD172BEE9B620063DF63 /* DestinationDetails.swift in Sources */,
+				FFD4CD302BF290540063DF63 /* RestaurantPhotosView.swift in Sources */,
 				FFD4CD102BED3B380063DF63 /* DestinationHeaderContainer.swift in Sources */,
 				FF666DA52BE3E3F700EE15DA /* Persistence.swift in Sources */,
 				FFD4CD0E2BED1E540063DF63 /* CustomMapAnnotation.swift in Sources */,
