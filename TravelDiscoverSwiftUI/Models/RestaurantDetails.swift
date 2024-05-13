@@ -11,4 +11,6 @@ import SwiftUI
 struct RestaurantDetails: Decodable {
     let description: String
     let popularDishes: [Dish]
+    let photos: [String]
+    let reviews: [Review]
 }

@@ -47,36 +47,14 @@ struct RestaurantDetailsView: View {
                 }//: HSTACK
                 .padding()
             }//: ZSTACK
-            VStack (alignment: .leading, spacing: 8){
-                Text("Location & Description")
-                    .font(.system(size: 16, weight: .bold))
-                Text("Tokyo, Japan")
-                HStack {
-                    ForEach(0..<5,id: \.self){ num in
-                        Image(systemName: "dollarsign.circle.fill")
-                    }//: LOOP
-                    .foregroundColor(.orange)
-                }//: HSTACK
-                Text(vm.details?.description ?? "")
-                    .padding(.top, 8)
-                    .font(.system(size: 14, weight: .regular))
-            }//: VSTACK
-            .padding()
-            HStack {
-                Text("Popular Dishes")
-                    .font(.system(size: 16, weight: .bold))
-                Spacer()
-            }.padding(.horizontal)
-            ScrollView(.horizontal, showsIndicators: false) {
-                HStack(spacing: 16) {
-                    ForEach(vm.details?.popularDishes ?? [], id: \.self) { dish in
-                        VStack(alignment: .leading) {
-                            DishCell(dish: dish)
-                        }
-                    }
-                }//:HSTACK
-                .padding(.horizontal)
-            }//: SCROLLVIEW
+
+            LocationDescriptionView()
+            if let dishes = vm.details?.popularDishes {
+                PopularDishesView(dishes: dishes)
+            }
+            if let reviews = vm.details?.reviews {
+                CustomerReviewsVIew(reviews: reviews)
+            }//: IF LET 
         }//: SCROLLVIEW
         .navigationBarTitle("Restaurant Details", displayMode: .inline)
     }
