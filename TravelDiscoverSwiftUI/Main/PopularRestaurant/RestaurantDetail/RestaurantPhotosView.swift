@@ -12,6 +12,7 @@ struct RestaurantPhotosView: View {
     //MARK: - PROPERTIES
     
     @State var mode = "grid"
+    @State var shouldShowFullscreenModal = false
     
     init(){
         UISegmentedControl.appearance().backgroundColor = .black
@@ -51,17 +52,39 @@ struct RestaurantPhotosView: View {
                 }//: PICKER
                 .pickerStyle(SegmentedPickerStyle())
                 .padding()
+                
+                Spacer()
+                    .fullScreenCover(isPresented: $shouldShowFullscreenModal, content: {
+                        ZStack(alignment: .topLeading){
+                            Color.black.ignoresSafeArea()
+                            RestaurantCarouselContainer(imageUrlStrings: photoUrlStrings)
+//                                .background(Color.black)
+                            Button(action: {
+                                shouldShowFullscreenModal.toggle()
+                            },  label: {
+                                Image(systemName: "xmark")
+                                    .font(.system(size: 24, weight: .bold))
+//                                    .foregroundColor(Color.white)
+                                    .padding()
+                            })
+                        }//: ZSTACK
+                    })//: SPACER
+                    .foregroundColor(.black)
                 if mode == "grid"{
                     //GRID
                     LazyVGrid(columns: [
                         GridItem(.adaptive(minimum: proxy.size.width / 3 - 4, maximum: 300), spacing: 2),
                     ], spacing:4, content: {
                         ForEach(photoUrlStrings, id: \.self){ item in
-                            KFImage(URL(string: item))
-                                .resizable()
-                                .scaledToFill()
-                                .frame(width: proxy.size.width / 3 - 3, height: proxy.size.width / 3 - 3)
-                                .clipped()
+                            Button(action: {
+                                shouldShowFullscreenModal.toggle()
+                            }, label: {
+                                KFImage(URL(string: item))
+                                    .resizable()
+                                    .scaledToFill()
+                                    .frame(width: proxy.size.width / 3 - 3, height: proxy.size.width / 3 - 3)
+                                    .clipped()
+                            })
                         }//: LOOP
                     })//: LAZY VERTICAL VIEW
                     .padding(.horizontal, 2)
