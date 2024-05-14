@@ -15,7 +15,7 @@ class CarouselPageViewController: UIPageViewController, UIPageViewControllerData
     }
     
     func presentationIndex(for pageViewController: UIPageViewController) -> Int {
-        0
+        self.selectedIndex
     }
     
     func pageViewController(_ pageViewController: UIPageViewController, viewControllerBefore viewController: UIViewController) -> UIViewController? {
@@ -32,14 +32,15 @@ class CarouselPageViewController: UIPageViewController, UIPageViewControllerData
     }
     
     var allControllers: [UIViewController] = []
+    var selectedIndex: Int
     
-    init(imageUrlStrings: [String]) {
+    init(imageUrlStrings: [String], selectedIndex: Int) {
+        self.selectedIndex = selectedIndex
         UIPageControl.appearance().pageIndicatorTintColor = UIColor.systemGray5
         UIPageControl.appearance().currentPageIndicatorTintColor = .red
         
         super.init(transitionStyle: .scroll, navigationOrientation: .horizontal, options: nil)
         
-        // pages that we swipe through
         allControllers = imageUrlStrings.map({ imageName in
             let hostingController =
                 UIHostingController(rootView:
@@ -55,8 +56,8 @@ class CarouselPageViewController: UIPageViewController, UIPageViewControllerData
             return hostingController
         })
         
-        if let first = allControllers.first {
-            setViewControllers([first], direction: .forward, animated: true, completion: nil)
+        if selectedIndex < allControllers.count {
+            setViewControllers([allControllers[selectedIndex]], direction: .forward, animated: true, completion: nil)
         }
         
         self.dataSource = self

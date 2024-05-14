@@ -10,9 +10,10 @@ import SwiftUI
 struct RestaurantCarouselContainer: UIViewControllerRepresentable {
     
     let imageUrlStrings: [String]
+    let selectedIndex: Int
     
     func makeUIViewController(context: Context) -> UIViewController {
-        let pvc = CarouselPageViewController(imageUrlStrings: imageUrlStrings)
+        let pvc = CarouselPageViewController(imageUrlStrings: imageUrlStrings, selectedIndex: selectedIndex)
         return pvc
     }
     

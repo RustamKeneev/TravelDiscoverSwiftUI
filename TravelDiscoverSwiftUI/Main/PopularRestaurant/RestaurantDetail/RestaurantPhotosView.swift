@@ -13,6 +13,7 @@ struct RestaurantPhotosView: View {
     
     @State var mode = "grid"
     @State var shouldShowFullscreenModal = false
+    @State var selectedPhotoIndex = 0
     
     init(){
         UISegmentedControl.appearance().backgroundColor = .black
@@ -57,26 +58,26 @@ struct RestaurantPhotosView: View {
                     .fullScreenCover(isPresented: $shouldShowFullscreenModal, content: {
                         ZStack(alignment: .topLeading){
                             Color.black.ignoresSafeArea()
-                            RestaurantCarouselContainer(imageUrlStrings: photoUrlStrings)
-//                                .background(Color.black)
+                            RestaurantCarouselContainer(imageUrlStrings: photoUrlStrings, selectedIndex: selectedPhotoIndex)
                             Button(action: {
                                 shouldShowFullscreenModal.toggle()
                             },  label: {
                                 Image(systemName: "xmark")
                                     .font(.system(size: 24, weight: .bold))
-//                                    .foregroundColor(Color.white)
+                                    .foregroundColor(Color.white)
                                     .padding()
                             })
                         }//: ZSTACK
                     })//: SPACER
-                    .foregroundColor(.black)
+                    .opacity(shouldShowFullscreenModal ? 1 : 0)
                 if mode == "grid"{
                     //GRID
                     LazyVGrid(columns: [
-                        GridItem(.adaptive(minimum: proxy.size.width / 3 - 4, maximum: 300), spacing: 2),
+                        GridItem(.adaptive(minimum: proxy.size.width / 3 - 4, maximum: 600), spacing: 2),
                     ], spacing:4, content: {
                         ForEach(photoUrlStrings, id: \.self){ item in
                             Button(action: {
+                                self.selectedPhotoIndex = photoUrlStrings.firstIndex(of: item) ?? 0
                                 shouldShowFullscreenModal.toggle()
                             }, label: {
                                 KFImage(URL(string: item))
