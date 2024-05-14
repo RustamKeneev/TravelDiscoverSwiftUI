@@ -10,6 +10,16 @@ import Kingfisher
 
 struct RestaurantPhotosView: View {
     //MARK: - PROPERTIES
+    
+    @State var mode = "grid"
+    
+    init(){
+        UISegmentedControl.appearance().backgroundColor = .black
+        UISegmentedControl.appearance().selectedSegmentTintColor = .orange
+        let titleTextAttributes = [NSAttributedString.Key.foregroundColor: UIColor.white]
+        UISegmentedControl.appearance().setTitleTextAttributes(titleTextAttributes, for: .selected)
+        UISegmentedControl.appearance().setTitleTextAttributes(titleTextAttributes, for: .normal)
+    }
 
     let photoUrlStrings = [
         "https://letsbuildthatapp-videos.s3.us-west-2.amazonaws.com/e2f3f5d4-5993-4536-9d8d-b505d7986a5c",
@@ -35,21 +45,52 @@ struct RestaurantPhotosView: View {
     var body: some View {
         GeometryReader{ proxy in
             ScrollView(showsIndicators: false){
-                //GRID
-                LazyVGrid(columns: [
-                    GridItem(.adaptive(minimum: proxy.size.width / 3 - 4, maximum: 300), spacing: 2),
-                ], spacing:4, content: {
+                Picker("Test", selection: $mode){
+                    Text("Grid").tag("grid")
+                    Text("List").tag("list")
+                }//: PICKER
+                .pickerStyle(SegmentedPickerStyle())
+                .padding()
+                if mode == "grid"{
+                    //GRID
+                    LazyVGrid(columns: [
+                        GridItem(.adaptive(minimum: proxy.size.width / 3 - 4, maximum: 300), spacing: 2),
+                    ], spacing:4, content: {
+                        ForEach(photoUrlStrings, id: \.self){ item in
+                            KFImage(URL(string: item))
+                                .resizable()
+                                .scaledToFill()
+                                .frame(width: proxy.size.width / 3 - 3, height: proxy.size.width / 3 - 3)
+                                .clipped()
+                        }//: LOOP
+                    })//: LAZY VERTICAL VIEW
+                    .padding(.horizontal, 2)
+                }else{
                     ForEach(photoUrlStrings, id: \.self){ item in
-//                        Image("tapas")
-                        KFImage(URL(string: item))
-                            .resizable()
-                            .scaledToFill()
-                            .frame(width: proxy.size.width / 3 - 3, height: proxy.size.width / 3 - 3)
-                            .clipped()
-                    }
-                })//: LAZY VERTICAL VIEW
-                .padding(.horizontal, 2)
-                Text("RestaurantPhotosView")
+                        VStack(alignment: .leading, spacing: 8) {
+                            KFImage(URL(string: item))
+                                .resizable()
+                                .scaledToFill()
+                            HStack {
+                                Image(systemName: "heart")
+                                Image(systemName: "bubble.right")
+                                Image(systemName: "paperplane")
+                                Spacer()
+                                Image(systemName: "bookmark")
+                            }//: HSTACK
+                                .padding(.horizontal, 8)
+                                .font(.system(size: 22))
+                            Text("Description for your post and it goes here, make sure to use a bunch of lines of text otherwise you never know what's going to happen.\n\nGreat job everyone")
+                                .font(.system(size: 14))
+                                .padding(.horizontal, 8)
+                            Text("Posted on 11/4/20")
+                                .font(.system(size: 14))
+                                .padding(.horizontal, 8)
+                                .foregroundColor(.gray)
+                        }//: VSTACK
+                        .padding(.bottom)
+                    }//: LOOP
+                }//: IF AND ELSE
             }//: SCROLL
         }//: GEOMETRY READER
         .navigationBarTitle("All Photos", displayMode: .inline)
