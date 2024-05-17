@@ -36,6 +36,7 @@
 		FF666DBD2BE5493400EE15DA /* Destination.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF666DBC2BE5493400EE15DA /* Destination.swift */; };
 		FF746C9B2BF78CCE005D4251 /* JustifiedText.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF746C9A2BF78CCE005D4251 /* JustifiedText.swift */; };
 		FF746C9F2BF7CC2C005D4251 /* Photos.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF746C9E2BF7CC2C005D4251 /* Photos.swift */; };
+		FF746CA12BF80391005D4251 /* StarsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF746CA02BF80391005D4251 /* StarsView.swift */; };
 		FFD4CD0C2BECC4FC0063DF63 /* Attraction.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFD4CD0B2BECC4FC0063DF63 /* Attraction.swift */; };
 		FFD4CD0E2BED1E540063DF63 /* CustomMapAnnotation.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFD4CD0D2BED1E540063DF63 /* CustomMapAnnotation.swift */; };
 		FFD4CD102BED3B380063DF63 /* DestinationHeaderContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFD4CD0F2BED3B380063DF63 /* DestinationHeaderContainer.swift */; };
@@ -89,6 +90,7 @@
 		FF666DBC2BE5493400EE15DA /* Destination.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Destination.swift; sourceTree = "<group>"; };
 		FF746C9A2BF78CCE005D4251 /* JustifiedText.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JustifiedText.swift; sourceTree = "<group>"; };
 		FF746C9E2BF7CC2C005D4251 /* Photos.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Photos.swift; sourceTree = "<group>"; };
+		FF746CA02BF80391005D4251 /* StarsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StarsView.swift; sourceTree = "<group>"; };
 		FFD4CD0B2BECC4FC0063DF63 /* Attraction.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Attraction.swift; sourceTree = "<group>"; };
 		FFD4CD0D2BED1E540063DF63 /* CustomMapAnnotation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomMapAnnotation.swift; sourceTree = "<group>"; };
 		FFD4CD0F2BED3B380063DF63 /* DestinationHeaderContainer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DestinationHeaderContainer.swift; sourceTree = "<group>"; };
@@ -197,6 +199,7 @@
 				FF0E07CD2BEBE08300071DC6 /* Indicator.swift */,
 				FFD4CD122BEDD40C0063DF63 /* CustomPageViewController.swift */,
 				FF746C9A2BF78CCE005D4251 /* JustifiedText.swift */,
+				FF746CA02BF80391005D4251 /* StarsView.swift */,
 			);
 			path = Utils;
 			sourceTree = "<group>";
@@ -423,6 +426,7 @@
 				FF0E07C92BEB7B3900071DC6 /* PopularDestinationDetailView.swift in Sources */,
 				FFD4CD372BF50E430063DF63 /* Post.swift in Sources */,
 				FFD4CD1B2BEF969A0063DF63 /* RestaurantDetailsView.swift in Sources */,
+				FF746CA12BF80391005D4251 /* StarsView.swift in Sources */,
 				FFD4CD152BEE9A5B0063DF63 /* DestinationDetailsViewModel.swift in Sources */,
 				FF0E07C72BEAA02200071DC6 /* PopularDestinationTileView.swift in Sources */,
 				FF0E07CE2BEBE08300071DC6 /* Indicator.swift in Sources */,
