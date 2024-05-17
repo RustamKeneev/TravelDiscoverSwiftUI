@@ -40,7 +40,7 @@ struct RestaurantDetailsView: View {
                     }//: VSTACK
                     Spacer()
                     NavigationLink {
-                        RestaurantPhotosView()
+                        RestaurantPhotosView(vm: vm)
                     } label: {
                         Text("See more photos")
                             .foregroundColor(.white)

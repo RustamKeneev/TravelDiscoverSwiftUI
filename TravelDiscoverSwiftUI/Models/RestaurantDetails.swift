@@ -14,7 +14,7 @@ struct RestaurantDetails: Decodable, Identifiable {
     let country: String
     let category: String
     let description: String
-    let photos: [Photos]
+    let photos: [String]
     let thumbnail: String
     let popularDishes: [Dish]
     let reviews: [Review]

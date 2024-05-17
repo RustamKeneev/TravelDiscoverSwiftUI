@@ -9,6 +9,6 @@ import Foundation
 import SwiftUI
 
 struct Photos: Decodable {
-    let photos: [String]
+    let photos: String
 }
 

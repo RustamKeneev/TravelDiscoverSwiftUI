@@ -40,7 +40,6 @@ struct PopularRestaurantsView: View {
                 }//: HSTACK
                 .padding(.horizontal)
                 .padding(.bottom)
-
             }//: SCROLLVIEW
         }//: VSTACK
     }
