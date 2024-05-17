@@ -34,6 +34,8 @@
 		FF666DB82BE52D0D00EE15DA /* TrendingCreatorsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF666DB72BE52D0D00EE15DA /* TrendingCreatorsView.swift */; };
 		FF666DBB2BE532F700EE15DA /* Category.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF666DBA2BE532F700EE15DA /* Category.swift */; };
 		FF666DBD2BE5493400EE15DA /* Destination.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF666DBC2BE5493400EE15DA /* Destination.swift */; };
+		FF746C9B2BF78CCE005D4251 /* JustifiedText.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF746C9A2BF78CCE005D4251 /* JustifiedText.swift */; };
+		FF746C9F2BF7CC2C005D4251 /* Photos.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF746C9E2BF7CC2C005D4251 /* Photos.swift */; };
 		FFD4CD0C2BECC4FC0063DF63 /* Attraction.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFD4CD0B2BECC4FC0063DF63 /* Attraction.swift */; };
 		FFD4CD0E2BED1E540063DF63 /* CustomMapAnnotation.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFD4CD0D2BED1E540063DF63 /* CustomMapAnnotation.swift */; };
 		FFD4CD102BED3B380063DF63 /* DestinationHeaderContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFD4CD0F2BED3B380063DF63 /* DestinationHeaderContainer.swift */; };
@@ -54,6 +56,7 @@
 		FFD4CD302BF290540063DF63 /* RestaurantPhotosView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFD4CD2F2BF290540063DF63 /* RestaurantPhotosView.swift */; };
 		FFD4CD332BF3B0DD0063DF63 /* RestaurantCarouselView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFD4CD322BF3B0DD0063DF63 /* RestaurantCarouselView.swift */; };
 		FFD4CD352BF3B1160063DF63 /* CarouselPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFD4CD342BF3B1160063DF63 /* CarouselPageViewController.swift */; };
+		FFD4CD372BF50E430063DF63 /* Post.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFD4CD362BF50E430063DF63 /* Post.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -84,6 +87,8 @@
 		FF666DB72BE52D0D00EE15DA /* TrendingCreatorsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrendingCreatorsView.swift; sourceTree = "<group>"; };
 		FF666DBA2BE532F700EE15DA /* Category.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Category.swift; sourceTree = "<group>"; };
 		FF666DBC2BE5493400EE15DA /* Destination.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Destination.swift; sourceTree = "<group>"; };
+		FF746C9A2BF78CCE005D4251 /* JustifiedText.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JustifiedText.swift; sourceTree = "<group>"; };
+		FF746C9E2BF7CC2C005D4251 /* Photos.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Photos.swift; sourceTree = "<group>"; };
 		FFD4CD0B2BECC4FC0063DF63 /* Attraction.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Attraction.swift; sourceTree = "<group>"; };
 		FFD4CD0D2BED1E540063DF63 /* CustomMapAnnotation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomMapAnnotation.swift; sourceTree = "<group>"; };
 		FFD4CD0F2BED3B380063DF63 /* DestinationHeaderContainer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DestinationHeaderContainer.swift; sourceTree = "<group>"; };
@@ -104,6 +109,7 @@
 		FFD4CD2F2BF290540063DF63 /* RestaurantPhotosView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RestaurantPhotosView.swift; sourceTree = "<group>"; };
 		FFD4CD322BF3B0DD0063DF63 /* RestaurantCarouselView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RestaurantCarouselView.swift; sourceTree = "<group>"; };
 		FFD4CD342BF3B1160063DF63 /* CarouselPageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarouselPageViewController.swift; sourceTree = "<group>"; };
+		FFD4CD362BF50E430063DF63 /* Post.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Post.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -190,6 +196,7 @@
 				FF0E07C42BEA925C00071DC6 /* NavigationLazyView.swift */,
 				FF0E07CD2BEBE08300071DC6 /* Indicator.swift */,
 				FFD4CD122BEDD40C0063DF63 /* CustomPageViewController.swift */,
+				FF746C9A2BF78CCE005D4251 /* JustifiedText.swift */,
 			);
 			path = Utils;
 			sourceTree = "<group>";
@@ -272,6 +279,8 @@
 				FFD4CD202BEFC1310063DF63 /* Dish.swift */,
 				FFD4CD242BF0FAC00063DF63 /* Review.swift */,
 				FFD4CD262BF0FADF0063DF63 /* ReviewUser.swift */,
+				FFD4CD362BF50E430063DF63 /* Post.swift */,
+				FF746C9E2BF7CC2C005D4251 /* Photos.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -388,8 +397,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				FF0E07A62BE66DBC00071DC6 /* User.swift in Sources */,
+				FF746C9B2BF78CCE005D4251 /* JustifiedText.swift in Sources */,
 				FFD4CD212BEFC1310063DF63 /* Dish.swift in Sources */,
 				FF0E07AD2BE7932300071DC6 /* TitleModifier.swift in Sources */,
+				FF746C9F2BF7CC2C005D4251 /* Photos.swift in Sources */,
 				FFD4CD172BEE9B620063DF63 /* DestinationDetails.swift in Sources */,
 				FFD4CD302BF290540063DF63 /* RestaurantPhotosView.swift in Sources */,
 				FFD4CD102BED3B380063DF63 /* DestinationHeaderContainer.swift in Sources */,
@@ -410,6 +421,7 @@
 				FF666D9C2BE3E3F500EE15DA /* TravelDiscoverSwiftUIApp.swift in Sources */,
 				FFD4CD192BEF80FD0063DF63 /* RestaurantTile.swift in Sources */,
 				FF0E07C92BEB7B3900071DC6 /* PopularDestinationDetailView.swift in Sources */,
+				FFD4CD372BF50E430063DF63 /* Post.swift in Sources */,
 				FFD4CD1B2BEF969A0063DF63 /* RestaurantDetailsView.swift in Sources */,
 				FFD4CD152BEE9A5B0063DF63 /* DestinationDetailsViewModel.swift in Sources */,
 				FF0E07C72BEAA02200071DC6 /* PopularDestinationTileView.swift in Sources */,

@@ -43,5 +43,6 @@ struct DishCell: View {
 }
 
 #Preview {
-    DishCell(dish: .init(name: "test", price: "ss", photo: "tapas", numPhotos: 4))
+    DishCell(dish: .init(name: "Dragon Rolls", price: "$12.99", numPhotos: 9, photo: "https://letsbuildthatapp-videos.s3.us-west-2.amazonaws.com/e2f3f5d4-5993-4536-9d8d-b505d7986a5c"))
 }
+

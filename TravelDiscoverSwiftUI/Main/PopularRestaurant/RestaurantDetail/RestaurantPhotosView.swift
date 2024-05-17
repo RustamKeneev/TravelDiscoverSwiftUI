@@ -94,7 +94,8 @@ struct RestaurantPhotosView: View {
                         VStack(alignment: .leading, spacing: 8) {
                             KFImage(URL(string: item))
                                 .resizable()
-                                .scaledToFill()
+                                .scaledToFit()
+                                .frame(height: 300)
                             HStack {
                                 Image(systemName: "heart")
                                 Image(systemName: "bubble.right")

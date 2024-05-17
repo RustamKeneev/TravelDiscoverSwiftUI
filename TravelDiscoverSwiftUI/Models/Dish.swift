@@ -10,6 +10,6 @@ import Foundation
 struct Dish: Decodable, Hashable {
     let name: String
     let price: String
-    let photo: String
     let numPhotos: Int
+    let photo: String
 }

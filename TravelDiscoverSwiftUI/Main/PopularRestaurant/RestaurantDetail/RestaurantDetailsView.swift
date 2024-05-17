@@ -10,14 +10,14 @@ import Kingfisher
 
 struct RestaurantDetailsView: View {
     //MARK: - PROPERTIES
-    @ObservedObject var vm = RestaurantDetailsViewModel()
+    @ObservedObject var vm: RestaurantDetailsViewModel
 
     let restaurant: Restaurant
     
-    let sampleDishPhotos = [
-        "https://letsbuildthatapp-videos.s3.us-west-2.amazonaws.com/0d1d2e79-2f10-4cfd-82da-a1c2ab3638d2",
-        "https://letsbuildthatapp-videos.s3.us-west-2.amazonaws.com/3a352f87-3dc1-4fa7-affe-fb12fa8691fe"
-    ]
+    init(restaurant: Restaurant){
+        self.restaurant = restaurant
+        self.vm = .init(id: restaurant.id)
+    }
 
     var body: some View {
         ScrollView{
@@ -52,11 +52,12 @@ struct RestaurantDetailsView: View {
                 .padding()
             }//: ZSTACK
 
-            LocationDescriptionView()
-            if let dishes = vm.details?.popularDishes {
+            LocationDescriptionView(vm: vm)
+            if let dishes = vm.restaurant?.popularDishes {
                 PopularDishesView(dishes: dishes)
             }
-            if let reviews = vm.details?.reviews {
+
+            if let reviews = vm.restaurant?.reviews {
                 CustomerReviewsVIew(reviews: reviews)
             }//: IF LET 
         }//: SCROLLVIEW
@@ -65,5 +66,5 @@ struct RestaurantDetailsView: View {
 }
 
 #Preview {
-    RestaurantDetailsView(restaurant: .init(name: "Japan", imageName: "tapas"))
+    RestaurantDetailsView(restaurant: .init(id: 0, name: "Japan's Finest Tapas", imageName: "tapas"))
 }

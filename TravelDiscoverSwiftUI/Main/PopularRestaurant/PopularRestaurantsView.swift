@@ -8,10 +8,11 @@
 import SwiftUI
 
 struct PopularRestaurantsView: View {
+    
     //MARK: - PROPERTIES
     let restaurants: [Restaurant] = [
-        .init(name: "Japan's Finest Tapas", imageName: "tapas"),
-        .init(name: "Bar & Grill", imageName: "bar_grill"),
+        .init(id: 0, name: "Japan's Finest Tapas", imageName: "tapas"),
+        .init(id: 1, name: "Bar & Grill", imageName: "bar_grill"),
     ]
     
     //MARK: - BODY

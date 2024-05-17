@@ -45,5 +45,5 @@ struct RestaurantTile: View {
 }
 
 #Preview {
-    RestaurantTile(restaurant: .init(name: "test", imageName: "tapas"))
+    RestaurantTile(restaurant: .init(id: 1, name: "test", imageName: "tapas"))
 }

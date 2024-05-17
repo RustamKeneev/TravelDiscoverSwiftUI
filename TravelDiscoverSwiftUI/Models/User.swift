@@ -8,7 +8,13 @@
 import Foundation
 import SwiftUI
 
-struct User : Hashable{
-    let name: String
-    let imageName: String
+struct User: Decodable {
+    let id: Int
+    let username: String
+    let firstName: String
+    let lastName: String
+    let profileImage: String
+    let followers: Int
+    let following: Int
+    let posts: [Post]
 }

@@ -9,6 +9,7 @@ import Foundation
 import SwiftUI
 
 struct Restaurant: Hashable{
+    let id: Int
     let name: String
     let imageName: String
 }

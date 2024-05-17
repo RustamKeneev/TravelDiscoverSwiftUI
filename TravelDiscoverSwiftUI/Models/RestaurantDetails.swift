@@ -8,9 +8,14 @@
 import Foundation
 import SwiftUI
 
-struct RestaurantDetails: Decodable {
+struct RestaurantDetails: Decodable, Identifiable {
+    let id: Int
+    let name: String
+    let country: String
+    let category: String
     let description: String
+    let photos: [Photos]
+    let thumbnail: String
     let popularDishes: [Dish]
-    let photos: [String]
     let reviews: [Review]
 }
