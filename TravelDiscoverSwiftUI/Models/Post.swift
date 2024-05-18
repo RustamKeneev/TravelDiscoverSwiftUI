@@ -6,7 +6,7 @@
 //
 
 import Foundation
-struct Post: Decodable {
+struct Post: Decodable, Hashable {
     let title: String
     let imageUrl: String
     let views: String

@@ -30,22 +30,22 @@ struct TrendingCreatorsView: View {
             .padding(.top)
             ScrollView(.horizontal, showsIndicators: false){
                 HStack(alignment: .top, spacing: 12){
-//                    ForEach(users, id: \.self){ user in
-//                        VStack{
-//                            Image(user.profileImage)
-//                                .resizable()
-//                                .scaledToFit()
-//                                .frame(width: 60, height: 60)
-//                                .background(Color(.init(white: 0.9, alpha: 1)))
-//                                .cornerRadius(.infinity)
-//                            Text(user.username)
-//                                .font(.system(size: 10, weight: .semibold))
-//                                .multilineTextAlignment(.center)
-//                        }//: VSTACK
-//                        .frame(width: 60)
-//                        .shadow(color: .gray, radius: 4, x: 0.0, y: 2)
-//                        .padding(.bottom)
-//                    }//: LOOP
+                    ForEach(users, id: \.self){ user in
+                        VStack{
+                            Image(user.profileImage)
+                                .resizable()
+                                .scaledToFit()
+                                .frame(width: 60, height: 60)
+                                .background(Color(.init(white: 0.9, alpha: 1)))
+                                .cornerRadius(.infinity)
+                            Text(user.username)
+                                .font(.system(size: 10, weight: .semibold))
+                                .multilineTextAlignment(.center)
+                        }//: VSTACK
+                        .frame(width: 60)
+                        .shadow(color: .gray, radius: 4, x: 0.0, y: 2)
+                        .padding(.bottom)
+                    }//: LOOP
                 }//: HSTACK
                 .padding(.horizontal)
             }//: SCROLLVIEW

@@ -11,6 +11,7 @@ import Kingfisher
 struct RestaurantDetailsView: View {
     // MARK: - PROPERTIES
     @ObservedObject var vm: RestaurantDetailsViewModel
+    @State private var isAnimating = false
 
     let restaurant: Restaurant
     @State private var randomStarCount: Float = Float.random(in: 1...5)
@@ -50,6 +51,11 @@ struct RestaurantDetailsView: View {
                             .font(.system(size: 14, weight: .regular))
                             .frame(width: 80)
                             .multilineTextAlignment(.trailing)
+                            .scaleEffect(isAnimating ? 1.2 : 1.0)
+                            .animation(Animation.easeInOut(duration: 0.8).repeatForever(autoreverses: true))
+                            .onAppear {
+                                self.isAnimating = true
+                            }
                     }//: NAVLINK
                 }//: HSTACK
                 .padding()
