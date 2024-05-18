@@ -14,6 +14,7 @@ extension View{
     }
 }
 
-extension Color{
+extension Color {
     static let discoverBackground = Color(.init(white: 0.95, alpha: 1))
+    static let defaultsBackground = Color("defaultBackground")
 }

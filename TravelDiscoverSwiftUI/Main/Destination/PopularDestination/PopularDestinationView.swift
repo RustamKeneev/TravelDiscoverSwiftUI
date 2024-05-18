@@ -48,4 +48,5 @@ struct PopularDestinationView: View {
 //MARK: - PREVIEW
 #Preview {
     PopularDestinationView()
+        .colorScheme(.dark)
 }

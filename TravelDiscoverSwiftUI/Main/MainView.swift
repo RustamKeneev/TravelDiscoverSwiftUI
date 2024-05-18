@@ -15,6 +15,9 @@ struct MainView: View {
         ]
     }
     
+    @Environment(\.colorScheme) var colorScheme
+
+    //MARK: - BODY
     var body: some View {
         NavigationView{
             ZStack{
@@ -40,16 +43,17 @@ struct MainView: View {
                         PopularRestaurantsView()
                         TrendingCreatorsView()
                     }//: VSTACK
-                    .background(Color.discoverBackground)
+                    .background(Color.defaultsBackground)
                     .cornerRadius(16)
                     .padding(.top, 32)
                 }//: SCROLL VIEW
             }//:ZSTACK
             .navigationTitle("Discover")
         }//: NAVIGATION VIEW
-    }
-}
+    }//: END BODY
+}//: END MAIN VIEW
 
+//MARK: - PREVIEW
 #Preview {
     MainView()
 }

@@ -112,7 +112,7 @@ struct UserDetailsView: View {
                             ForEach(item.hashtags, id: \.self) { item in
                                 Text("#\(item)")
                                     .foregroundColor(Color(#colorLiteral(red: 0.07797152549, green: 0.513774395, blue: 0.9998757243, alpha: 1)))
-                                    .font(.system(size: 14, weight: .semibold))
+                                    .font(.system(size: 12, weight: .semibold))
                                     .padding(.horizontal, 12)
                                     .padding(.vertical, 4)
                                     .background(Color(#colorLiteral(red: 0.9057956338, green: 0.9333867431, blue: 0.9763537049, alpha: 1)))
@@ -122,7 +122,7 @@ struct UserDetailsView: View {
                         .padding(.bottom)
                         .padding(.horizontal, 12)
                     }//: VSTACK
-                    .background(Color(white: 1))
+                    .background(Color.defaultsBackground)
                     .cornerRadius(12)
                     .shadow(color: .init(white: 0.8), radius: 5, x: 0, y: 4)
                 }//: LOOP
