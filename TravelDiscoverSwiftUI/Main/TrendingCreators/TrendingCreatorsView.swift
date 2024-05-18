@@ -11,9 +11,9 @@ struct TrendingCreatorsView: View {
     //MARK: - PROPERTIES
     
     let users: [User] = [
-        User(id: 1, username: "amyadams20", firstName: "Amy", lastName: "Adams", profileImage: "amy", followers: 0, following: 0, posts: []),
-        User(id: 2, username: "billybilly", firstName: "Billy", lastName: "Childs", profileImage: "billy", followers: 0, following: 0, posts: []),
-        User(id: 3, username: "samsmith", firstName: "Sam", lastName: "Smith", profileImage: "sam", followers: 0, following: 0, posts: [])
+        User(id: 0, username: "amyadams20", firstName: "Amy", lastName: "Adams", profileImage: "amy", followers: 0, following: 0, posts: []),
+        User(id: 1, username: "billybilly", firstName: "Billy", lastName: "Childs", profileImage: "billy", followers: 0, following: 0, posts: []),
+        User(id: 2, username: "samsmith", firstName: "Sam", lastName: "Smith", profileImage: "sam", followers: 0, following: 0, posts: [])
     ]
     
     //MARK: - BODY
@@ -26,8 +26,8 @@ struct TrendingCreatorsView: View {
                 Text("See all")
                     .font(.system(size: 14, weight: .semibold))
             }//: HSTACK
-            .padding(.horizontal)
-            .padding(.top)
+                .padding(.horizontal)
+                .padding(.top)
             ScrollView(.horizontal, showsIndicators: false){
                 HStack(alignment: .top, spacing: 12){
                     ForEach(users, id: \.self){ user in
@@ -47,19 +47,11 @@ struct TrendingCreatorsView: View {
                         .padding(.bottom)
                     }//: LOOP
                 }//: HSTACK
-                .padding(.horizontal)
+                    .padding(.horizontal)
             }//: SCROLLVIEW
         }//: VSTACK
-    }
-}
-
-//MARK: - PREVIEW
-struct TrendingCreatorsView_Previews: PreviewProvider {
-    static var previews: some View {
-        TrendingCreatorsView()
-    }
-}
-
+    }//: END BODY
+}//: END TRENDING CREATORS VIEW
 
 //MARK: - PREVIEW
 #Preview {

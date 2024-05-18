@@ -37,6 +37,7 @@
 		FF746C9B2BF78CCE005D4251 /* JustifiedText.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF746C9A2BF78CCE005D4251 /* JustifiedText.swift */; };
 		FF746C9F2BF7CC2C005D4251 /* Photos.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF746C9E2BF7CC2C005D4251 /* Photos.swift */; };
 		FF746CA12BF80391005D4251 /* StarsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF746CA02BF80391005D4251 /* StarsView.swift */; };
+		FF746CA42BF89DC5005D4251 /* UserDetailsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF746CA32BF89DC5005D4251 /* UserDetailsView.swift */; };
 		FFD4CD0C2BECC4FC0063DF63 /* Attraction.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFD4CD0B2BECC4FC0063DF63 /* Attraction.swift */; };
 		FFD4CD0E2BED1E540063DF63 /* CustomMapAnnotation.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFD4CD0D2BED1E540063DF63 /* CustomMapAnnotation.swift */; };
 		FFD4CD102BED3B380063DF63 /* DestinationHeaderContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFD4CD0F2BED3B380063DF63 /* DestinationHeaderContainer.swift */; };
@@ -91,6 +92,7 @@
 		FF746C9A2BF78CCE005D4251 /* JustifiedText.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JustifiedText.swift; sourceTree = "<group>"; };
 		FF746C9E2BF7CC2C005D4251 /* Photos.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Photos.swift; sourceTree = "<group>"; };
 		FF746CA02BF80391005D4251 /* StarsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StarsView.swift; sourceTree = "<group>"; };
+		FF746CA32BF89DC5005D4251 /* UserDetailsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDetailsView.swift; sourceTree = "<group>"; };
 		FFD4CD0B2BECC4FC0063DF63 /* Attraction.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Attraction.swift; sourceTree = "<group>"; };
 		FFD4CD0D2BED1E540063DF63 /* CustomMapAnnotation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomMapAnnotation.swift; sourceTree = "<group>"; };
 		FFD4CD0F2BED3B380063DF63 /* DestinationHeaderContainer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DestinationHeaderContainer.swift; sourceTree = "<group>"; };
@@ -162,6 +164,7 @@
 		FF0E07AA2BE78E8F00071DC6 /* TrendingCreators */ = {
 			isa = PBXGroup;
 			children = (
+				FF746CA22BF89D9F005D4251 /* Users */,
 				FF666DB72BE52D0D00EE15DA /* TrendingCreatorsView.swift */,
 			);
 			path = TrendingCreators;
@@ -286,6 +289,14 @@
 				FF746C9E2BF7CC2C005D4251 /* Photos.swift */,
 			);
 			path = Models;
+			sourceTree = "<group>";
+		};
+		FF746CA22BF89D9F005D4251 /* Users */ = {
+			isa = PBXGroup;
+			children = (
+				FF746CA32BF89DC5005D4251 /* UserDetailsView.swift */,
+			);
+			path = Users;
 			sourceTree = "<group>";
 		};
 		FFD4CD112BED571B0063DF63 /* Destination */ = {
@@ -415,6 +426,7 @@
 				FF666DB62BE5201600EE15DA /* PopularRestaurantsView.swift in Sources */,
 				FF0E07B52BE7CF9E00071DC6 /* CategoryDetailViewModel.swift in Sources */,
 				FFD4CD232BEFC5CD0063DF63 /* DishCell.swift in Sources */,
+				FF746CA42BF89DC5005D4251 /* UserDetailsView.swift in Sources */,
 				FF666D9E2BE3E3F500EE15DA /* ContentView.swift in Sources */,
 				FFD4CD2E2BF1D0950063DF63 /* CustomerReviewsVIew.swift in Sources */,
 				FFD4CD1D2BEFC01D0063DF63 /* RestaurantDetailsViewModel.swift in Sources */,
