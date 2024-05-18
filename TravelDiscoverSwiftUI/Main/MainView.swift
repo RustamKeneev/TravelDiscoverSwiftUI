@@ -28,12 +28,12 @@ struct MainView: View {
                         Text("Where do you want to go?")
                         Spacer()
                     }//: HSTACK
-                        .font(.system(size: 14, weight: .semibold))
-                        .foregroundColor(Color.white)
-                        .padding()
-                        .background(Color(.init(white:1 , alpha: 0.3)))
-                        .cornerRadius(10)
-                        .padding(16)
+                    .font(.system(size: 14, weight: .semibold))
+                    .foregroundColor(Color.white)
+                    .padding()
+                    .background(Color(.init(white:1 , alpha: 0.3)))
+                    .cornerRadius(10)
+                    .padding(16)
                     DiscoverCategoriesView()
                     VStack{
                         PopularDestinationView()

@@ -38,6 +38,8 @@
 		FF746C9F2BF7CC2C005D4251 /* Photos.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF746C9E2BF7CC2C005D4251 /* Photos.swift */; };
 		FF746CA12BF80391005D4251 /* StarsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF746CA02BF80391005D4251 /* StarsView.swift */; };
 		FF746CA42BF89DC5005D4251 /* UserDetailsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF746CA32BF89DC5005D4251 /* UserDetailsView.swift */; };
+		FF746CA62BF8D2C6005D4251 /* UserDetailsVIewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF746CA52BF8D2C6005D4251 /* UserDetailsVIewModel.swift */; };
+		FF746CA82BF8DD07005D4251 /* DiscoverUserView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF746CA72BF8DD07005D4251 /* DiscoverUserView.swift */; };
 		FFD4CD0C2BECC4FC0063DF63 /* Attraction.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFD4CD0B2BECC4FC0063DF63 /* Attraction.swift */; };
 		FFD4CD0E2BED1E540063DF63 /* CustomMapAnnotation.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFD4CD0D2BED1E540063DF63 /* CustomMapAnnotation.swift */; };
 		FFD4CD102BED3B380063DF63 /* DestinationHeaderContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFD4CD0F2BED3B380063DF63 /* DestinationHeaderContainer.swift */; };
@@ -93,6 +95,8 @@
 		FF746C9E2BF7CC2C005D4251 /* Photos.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Photos.swift; sourceTree = "<group>"; };
 		FF746CA02BF80391005D4251 /* StarsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StarsView.swift; sourceTree = "<group>"; };
 		FF746CA32BF89DC5005D4251 /* UserDetailsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDetailsView.swift; sourceTree = "<group>"; };
+		FF746CA52BF8D2C6005D4251 /* UserDetailsVIewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDetailsVIewModel.swift; sourceTree = "<group>"; };
+		FF746CA72BF8DD07005D4251 /* DiscoverUserView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiscoverUserView.swift; sourceTree = "<group>"; };
 		FFD4CD0B2BECC4FC0063DF63 /* Attraction.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Attraction.swift; sourceTree = "<group>"; };
 		FFD4CD0D2BED1E540063DF63 /* CustomMapAnnotation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomMapAnnotation.swift; sourceTree = "<group>"; };
 		FFD4CD0F2BED3B380063DF63 /* DestinationHeaderContainer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DestinationHeaderContainer.swift; sourceTree = "<group>"; };
@@ -134,6 +138,7 @@
 			children = (
 				FF0E07C32BE9665F00071DC6 /* Category */,
 				FF666DB12BE49E7800EE15DA /* DiscoverCategoriesView.swift */,
+				FF746CA72BF8DD07005D4251 /* DiscoverUserView.swift */,
 			);
 			path = Discover;
 			sourceTree = "<group>";
@@ -295,6 +300,7 @@
 			isa = PBXGroup;
 			children = (
 				FF746CA32BF89DC5005D4251 /* UserDetailsView.swift */,
+				FF746CA52BF8D2C6005D4251 /* UserDetailsVIewModel.swift */,
 			);
 			path = Users;
 			sourceTree = "<group>";
@@ -446,6 +452,7 @@
 				FF0E07A42BE660FC00071DC6 /* Restaurant.swift in Sources */,
 				FF666DB42BE4C0F800EE15DA /* PopularDestinationView.swift in Sources */,
 				FFD4CD1F2BEFC0E40063DF63 /* RestaurantDetails.swift in Sources */,
+				FF746CA62BF8D2C6005D4251 /* UserDetailsVIewModel.swift in Sources */,
 				FFD4CD252BF0FAC00063DF63 /* Review.swift in Sources */,
 				FF666DB82BE52D0D00EE15DA /* TrendingCreatorsView.swift in Sources */,
 				FFD4CD332BF3B0DD0063DF63 /* RestaurantCarouselView.swift in Sources */,
@@ -453,6 +460,7 @@
 				FF0E07B82BE7ECFC00071DC6 /* ActivityIndicatorView.swift in Sources */,
 				FFD4CD2C2BF1CFE40063DF63 /* PopularDishesView.swift in Sources */,
 				FF666DBD2BE5493400EE15DA /* Destination.swift in Sources */,
+				FF746CA82BF8DD07005D4251 /* DiscoverUserView.swift in Sources */,
 				FF0E07C52BEA925C00071DC6 /* NavigationLazyView.swift in Sources */,
 				FF0E07B22BE7BD7600071DC6 /* CategoryDetailView.swift in Sources */,
 				FFD4CD352BF3B1160063DF63 /* CarouselPageViewController.swift in Sources */,

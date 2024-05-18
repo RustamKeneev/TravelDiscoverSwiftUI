@@ -26,28 +26,20 @@ struct TrendingCreatorsView: View {
                 Text("See all")
                     .font(.system(size: 14, weight: .semibold))
             }//: HSTACK
-                .padding(.horizontal)
-                .padding(.top)
-            ScrollView(.horizontal, showsIndicators: false){
-                HStack(alignment: .top, spacing: 12){
-                    ForEach(users, id: \.self){ user in
-                        VStack{
-                            Image(user.profileImage)
-                                .resizable()
-                                .scaledToFit()
-                                .frame(width: 60, height: 60)
-                                .background(Color(.init(white: 0.9, alpha: 1)))
-                                .cornerRadius(.infinity)
-                            Text(user.username)
-                                .font(.system(size: 10, weight: .semibold))
-                                .multilineTextAlignment(.center)
-                        }//: VSTACK
-                        .frame(width: 60)
-                        .shadow(color: .gray, radius: 4, x: 0.0, y: 2)
-                        .padding(.bottom)
+            .padding(.horizontal)
+            .padding(.top)
+            ScrollView(.horizontal) {
+                HStack(alignment: .top, spacing: 12) {
+                    ForEach(users, id: \.self) { user in
+                        NavigationLink(
+                            destination: UserDetailsView(user: user),
+                            label: {
+                                DiscoverUserView(user: user)
+                            })//: NAVIGATION LINK
                     }//: LOOP
                 }//: HSTACK
-                    .padding(.horizontal)
+                .padding(.horizontal)
+                .padding(.bottom)
             }//: SCROLLVIEW
         }//: VSTACK
     }//: END BODY

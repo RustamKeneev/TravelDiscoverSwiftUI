@@ -8,8 +8,10 @@
 import SwiftUI
 
 struct RestaurantTile: View {
+    //MARK: - PROPERTIES
     let restaurant: Restaurant
     
+    //MARK: - BODY
     var body: some View {
         HStack(spacing: 8){
             Image(restaurant.imageName)
@@ -28,7 +30,7 @@ struct RestaurantTile: View {
                     }, label: {
                         Image(systemName: "ellipsis")
                             .foregroundColor(.gray)
-                    })
+                    })//: BUTTON
                 }//: HSTACK
                 HStack{
                     Image(systemName: "star.fill")
@@ -39,11 +41,12 @@ struct RestaurantTile: View {
             .font(.system(size: 12, weight: .semibold))
             Spacer()
         }//: HSTACK
-            .frame(width: 240)
-            .asTitle()
-    }
-}
+        .frame(width: 240)
+        .asTitle()
+    }//: END BODY
+}//: END RESTAURANR TILE
 
+//MARK: - PREVIEW
 #Preview {
     RestaurantTile(restaurant: .init(id: 1, name: "test", imageName: "tapas"))
 }
